@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Acelerador de IA en la Nube</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Fuente Inter para una mejor legibilidad */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Un gris claro azulado para el fondo */
+        }
+        /* Estilos personalizados para la infografía */
+        .gradient-bg {
+            background: linear-gradient(to right, #4a90e2, #63b3ed); /* Degradado azul */
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 4px;
+            background-color: #4a90e2; /* Color de acento para la línea */
+            border-radius: 2px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.25rem; /* Bordes más redondeados */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra suave */
+            padding: 1.5rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+        }
+        .icon-box {
+            background-color: #e0f2fe; /* Azul claro para los iconos */
+            border-radius: 50%;
+            padding: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #2196f3; /* Azul más oscuro para el icono */
+        }
+        .progress-bar-container {
+            background-color: #e2e8f0;
+            border-radius: 0.75rem;
+            height: 1.5rem;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background-color: #4a90e2;
+            height: 100%;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 1s ease-in-out;
+        }
+        /* Estilos para el botón CTA */
+        .cta-button {
+            background: linear-gradient(to right, #4CAF50, #8BC34A); /* Degradado verde */
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 9999px; /* Botón pill */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-8 lg:p-12 max-w-7xl">
+
+        <!-- Sección de Cabecera / Título Principal -->
+        <header class="text-center py-12 rounded-3xl mb-12 gradient-bg text-white shadow-lg">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+                Desbloquee su Potencial de IA en México
+            </h1>
+            <p class="text-xl sm:text-2xl font-light">
+                Multiplique sus Proyectos de Innovación y Reduzca el Costo en un <span class="font-bold">30% en 90 Días</span>
+            </p>
+            <!-- Imagen de cabecera representativa de IA o Nube -->
+            <img src="https://placehold.co/800x200/4a90e2/ffffff?text=Infraestructura+IA+en+Nube" alt="Infraestructura IA en Nube" class="mx-auto mt-8 rounded-xl shadow-md max-w-full h-auto">
+        </header>
+
+        <!-- Sección 1: Introducción y Problema (Dolor) -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">El Dolor de la IA en México</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <div class="icon-box mb-4"><i class="fas fa-exclamation-triangle text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Laberinto de Infraestructura</h3>
+                    <p class="text-gray-700">Atrapado en infraestructura compleja, costos impredecibles y escasez de talento. Sus equipos se ahogan en gestión, no en valor.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box mb-4"><i class="fas fa-chart-line text-2xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">90% de Proyectos Estancados</h3>
+                    <p class="text-gray-700">La realidad en México: el 90% de las empresas se estancan en la fase piloto de IA debido a la fricción operativa.</p>
+                </div>
+            </div>
+            <p class="text-center text-gray-600 mt-8 text-lg italic">"Cada minuto que sus GPUs están ociosas o sus ingenieros dedican a 'dev-ops' en lugar de 'data science', es dinero y oportunidad que se evapora."</p>
+        </section>
+
+        <!-- Sección 2: La Oferta Irresistible -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Nuestra Oferta Irresistible: IA para el Liderazgo</h2>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
+                <!-- Componentes de Valor -->
+                <div class="card col-span-full lg:col-span-1">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">Componentes Clave</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-cloud text-blue-500 mr-2"></i> Infraestructura de IA Nube-Nativa en México</li>
+                        <li><i class="fas fa-cogs text-blue-500 mr-2"></i> Plataforma MLOps Pre-configurada y Gestionada</li>
+                        <li><i class="fas fa-users text-blue-500 mr-2"></i> Equipo de Expertos en IA Cloud Dedicado (México)</li>
+                        <li><i class="fas fa-dollar-sign text-blue-500 mr-2"></i> Optimización Continua de Costos de IA</li>
+                        <li><i class="fas fa-lightbulb text-blue-500 mr-2"></i> Taller Estratégico de IA (AI Jumpstart Workshop)</li>
+                    </ul>
+                </div>
+                <!-- Garantías -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Nuestras Garantías</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="font-bold text-green-600"><i class="fas fa-percent text-green-500 mr-2"></i> Reducción de Costos del 30% en 90 Días</li>
+                        <li><i class="fas fa-shield-alt text-green-500 mr-2"></i> Tiempo de Actividad del 99.99%</li>
+                        <li><i class="fas fa-rocket text-green-500 mr-2"></i> Despliegue de Piloto en 60 Días</li>
+                    </ul>
+                    <p class="text-sm mt-4 text-gray-600 italic">Respaldado por SLAs contractuales.</p>
+                </div>
+                <!-- Bonos -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-purple-700 mb-4">Bonos de Alto Valor</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-graduation-cap text-purple-500 mr-2"></i> Capacitación Avanzada en MLOps (<span class="font-bold">$5,000 USD</span>)</li>
+                        <li><i class="fas fa-lock text-purple-500 mr-2"></i> Diagnóstico de Seguridad Cloud para IA (<span class="font-bold">$3,000 USD</span>)</li>
+                        <li><i class="fas fa-credit-card text-purple-500 mr-2"></i> Créditos de Prueba de Concepto Inicial (<span class="font-bold">$2,000 USD</span>)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Escasez / Urgencia -->
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-lg shadow-md flex items-center">
+                <i class="fas fa-hourglass-half text-2xl mr-4"></i>
+                <div>
+                    <p class="font-bold text-lg">¡Cupos Limitados y Oferta por Tiempo Definido!</p>
+                    <p>Solo para <span class="font-bold">5 clientes estratégicos</span> este trimestre. La garantía de reducción de costos del 30% es válida solo para contratos firmados antes del <span class="font-bold">31 de agosto de 2025</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Estrategia de Adquisición de Clientes -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Estrategia de Adquisición de Clientes</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3">Público Objetivo</h3>
+                    <p class="text-gray-700">Directores de TI/Tecnología, CTOs, CEOs de empresas medianas y grandes en México (FinTech, Manufactura, Retail, Startups de alto crecimiento).</p>
+                </div>
+                <div class="card col-span-full md:col-span-1 lg:col-span-2">
+                    <h3 class="text-xl font-semibold mb-3">Canales y Tácticas</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-gray-700">
+                        <li><i class="fas fa-video text-blue-500 mr-2"></i> Webinars "Cómo Reducir Costos de IA"</li>
+                        <li><i class="fas fa-book text-blue-500 mr-2"></i> Guías 'Playbook' de Adopción de IA</li>
+                        <li><i class="fas fa-award text-blue-500 mr-2"></i> Estudios de Caso Detallados</li>
+                        <li><i class="fas fa-envelope text-blue-500 mr-2"></i> Cold Email / LinkedIn Outreach Personalizado</li>
+                        <li><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> Eventos de Nicho y Conferencias</li>
+                        <li><i class="fas fa-handshake text-blue-500 mr-2"></i> Alianzas Estratégicas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mt-8">
+                <h3 class="text-xl font-semibold mb-3">Embudo de Adquisición</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div>
+                        <div class="icon-box mx-auto mb-2"><i class="fas fa-eye text-xl"></i></div>
+                        <p class="font-semibold">Awareness</p>
+                        <p class="text-sm text-gray-600">Contenido de Valor</p>
+                    </div>
+                    <div>
+                        <div class="icon-box mx-auto mb-2"><i class="fas fa-lightbulb text-xl"></i></div>
+                        <p class="font-semibold">Interest</p>
+                        <p class="text-sm text-gray-600">Diagnóstico Gratuito</p>
+                    </div>
+                    <div>
+                        <div class="icon-box mx-auto mb-2"><i class="fas fa-hand-point-up text-xl"></i></div>
+                        <p class="font-semibold">Decision</p>
+                        <p class="text-sm text-gray-600">Propuesta + Taller</p>
+                    </div>
+                    <div>
+                        <div class="icon-box mx-auto mb-2"><i class="fas fa-check-circle text-xl"></i></div>
+                        <p class="font-semibold">Action</p>
+                        <p class="text-sm text-gray-600">Firma de Contrato</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: La Solución Detallada -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Nuestra Solución en Detalle</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3">Cómo Resolvemos sus Problemas</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-chart-pie text-blue-500 mr-2"></i> <span class="font-semibold">Costos Impredecibles:</span> Algoritmos de auto-escalado y optimización proactiva.</li>
+                        <li><i class="fas fa-puzzle-piece text-blue-500 mr-2"></i> <span class="font-semibold">Complejidad de Infraestructura:</span> Plataforma MLOps pre-configurada y gestión experta.</li>
+                        <li><i class="fas fa-user-tie text-blue-500 mr-2"></i> <span class="font-semibold">Escasez de Talento:</span> Ingenieros certificados en México como extensión de su equipo.</li>
+                        <li><i class="fas fa-globe text-blue-500 mr-2"></i> <span class="font-semibold">Latencia y Soberanía:</span> Uso de regiones cloud en México e infraestructura local.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3">Pasos Clave de Implementación</h3>
+                    <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                        <li><span class="font-semibold">Fase 1: Descubrimiento y Auditoría de IA</span> (Semanas 1-2)</li>
+                        <li><span class="font-semibold">Fase 2: Diseño y Configuración del Entorno</span> (Semanas 3-4)</li>
+                        <li><span class="font-semibold">Fase 3: Migración de Pilotos de IA</span> (Semanas 5-8)</li>
+                        <li><span class="font-semibold">Fase 4: Optimización Continua y Soporte</span> (Mes 3 en adelante)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 5: Prueba Social y Credibilidad -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Prueba Social y Credibilidad</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3">Testimonios y Casos de Estudio</h3>
+                    <ul class="space-y-3 text-gray-700 italic">
+                        <li><i class="fas fa-quote-left text-gray-400 mr-2"></i> "Ayudamos a <span class="font-semibold">[Empresa Financiera X]</span> a reducir costos de inferencia en un 35% y desplegar un modelo de fraude en 8 semanas."</li>
+                        <li><i class="fas fa-quote-left text-gray-400 mr-2"></i> "Para <span class="font-semibold">[Empresa de Manufactura Y]</span>, optimizamos su pipeline de visión artificial, reduciendo el tiempo de procesamiento en un 40%."</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3">Estadísticas y Validación Externa</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-info-circle text-gray-500 mr-2"></i> Empresas que no invierten en IA eficiente pierden hasta el <span class="font-bold">20%</span> de su presupuesto de innovación.</li>
+                        <li><i class="fas fa-info-circle text-gray-500 mr-2"></i> El <span class="font-bold">70%</span> de los proyectos de IA fallan en la fase de escalado.</li>
+                        <li><i class="fas fa-certificate text-gray-500 mr-2"></i> Equipo con certificaciones <span class="font-semibold">AWS, Azure, Google Cloud</span>.</li>
+                        <li><i class="fas fa-handshake text-gray-500 mr-2"></i> Partnerships estratégicos con <span class="font-semibold">AWS, Microsoft Azure, Google Cloud</span>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 6: Inversión y Retorno de la Inversión (ROI) -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title">Inversión y Retorno de la Inversión (ROI)</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3">Inversión Requerida</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-hand-holding-usd text-blue-500 mr-2"></i> <span class="font-semibold">Cuota de Configuración Única:</span> Desde $X,XXX USD</li>
+                        <li><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> <span class="font-semibold">Suscripción Mensual:</span> Desde $Y,YYY USD/mes</li>
+                        <li><i class="fas fa-meter-alt text-blue-500 mr-2"></i> <span class="font-semibold">Consumo de Recursos IaaS:</span> Pay-per-Use Optimizado (20-40% menos que desoptimizado)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3">Retorno de la Inversión Potencial</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-piggy-bank text-green-500 mr-2"></i> <span class="font-semibold">Ahorro Directo:</span> 30% garantizado en 90 días.</li>
+                        <li><i class="fas fa-chart-bar text-green-500 mr-2"></i> <span class="font-semibold">Aumento Productividad Equipos IA:</span> 20-30%</li>
+                        <li><i class="fas fa-fast-forward text-green-500 mr-2"></i> <span class="font-semibold">Aceleración de Proyectos:</span> Semanas a meses de adelanto.</li>
+                        <li><i class="fas fa-shield-alt text-green-500 mr-2"></i> <span class="font-semibold">Reducción Riesgo Operativo y Seguridad.</span></li>
+                    </ul>
+                    <p class="text-center text-lg font-bold mt-4 text-blue-700">
+                        <i class="fas fa-calculator text-blue-500 mr-2"></i> ROI Proyectado: <span class="text-4xl">250%</span> en el primer año (caso típico)
+                    </p>
+                    <div class="progress-bar-container mt-4">
+                        <div class="progress-bar" style="width: 100%;">ROI del 250%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 7: Llamada a la Acción (CTA) -->
+        <section class="text-center py-12 bg-blue-700 text-white rounded-3xl shadow-lg mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">¿Listo para Desbloquear su Potencial de IA?</h2>
+            <p class="text-xl mb-8">
+                No deje que la complejidad frene su potencial en IA.
+            </p>
+            <a href="#" class="cta-button inline-block">
+                Solicite su Diagnóstico de Costos de IA GRATUITO
+            </a>
+            <p class="text-sm mt-6 text-blue-200">
+                <i class="fas fa-calendar-alt mr-2"></i> O agende una sesión estratégica de 15 minutos con nuestros arquitectos de IA.
+            </p>
+            <p class="text-sm mt-2 text-yellow-200 font-bold">
+                ¡Cupos Limitados! Asegure su lugar antes del 31 de agosto de 2025.
+            </p>
+        </section>
+
+        <!-- Sección 8: Conclusión -->
+        <section class="text-center pb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 section-title mx-auto w-fit">Conclusión</h2>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                La era de la Inteligencia Artificial está aquí, y México es un epicentro de innovación. Su capacidad para escalar y monetizar la IA depende directamente de una infraestructura en la nube ágil, optimizada y expertamente gestionada. Con la oferta 'IA para el Liderazgo', no solo le prometemos infraestructura; le garantizamos una reducción tangible de costos, una aceleración sin precedentes en sus proyectos de IA y la tranquilidad de saber que cuenta con expertos locales respaldando su visión. No se quede atrás; lidere la transformación digital con confianza.
+            </p>
+        </section>
+
+    </div>
+
+</body>
+</html>
