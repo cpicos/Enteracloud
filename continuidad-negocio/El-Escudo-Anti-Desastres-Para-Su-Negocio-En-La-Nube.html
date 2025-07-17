@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Blindaje Total para su Negocio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #334155; /* Dark slate text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Dark blue for titles */
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #3b82f6; /* Blue accent */
+            border-radius: 9999px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Softer shadow */
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .icon {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: 1rem;
+            color: #3b82f6; /* Blue icon color */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #3b82f6, #60a5fa); /* Blue gradient */
+            color: white;
+        }
+        .cta-button {
+            background: linear-gradient(to right, #10b981, #34d399); /* Green gradient for CTA */
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-align: center;
+            display: inline-block;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="text-center py-12 gradient-bg rounded-b-3xl mb-8">
+            <h1 class="text-5xl font-extrabold mb-4 leading-tight">
+                Blindaje Total: Su Negocio en México Nunca se Detiene
+            </h1>
+            <p class="text-xl font-light opacity-90">
+                Garantizamos Mitigación en Pérdidas de Datos y Recuperación en Minutos.
+            </p>
+        </header>
+
+        <!-- Introduction and Problem Section -->
+        <section class="mb-12">
+            <h2 class="section-title">El Dolor: ¿Por Qué Necesita Protección?</h2>
+            <div class="card grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="icon">
+                        <!-- Icon for Pain -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-off">
+                            <path d="M19.07 19.07A10 10 0 0 1 12 22s-8-4-8-10V5l4-2 3.07 1.84"></path>
+                            <path d="M2.2 2.2 21.8 21.8"></path>
+                            <path d="M12 2v2.07"></path>
+                            <path d="M17.83 7.15 20 5l-4-2-1.84 3.07"></path>
+                            <path d="M12 14v8"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">La Amenaza Constante</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Cortes de energía, ciberataques, desastres naturales o errores humanos pueden paralizar sus sistemas críticos. La pérdida de datos, el tiempo de inactividad y el impacto en su reputación e ingresos son pesadillas reales.
+                    </p>
+                </div>
+                <div>
+                    <div class="icon">
+                        <!-- Icon for Cost -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign">
+                            <line x1="12" x2="12" y1="2" y2="22"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">El Costo de la Inactividad</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        ¿Sabe cuánto le cuesta cada minuto de inactividad? Sus competidores no esperan. Cada interrupción es una oportunidad perdida, una venta cancelada, un cliente insatisfecho. Las soluciones tradicionales son costosas y complejas.
+                    </p>
+                </div>
+            </div>
+            <p class="text-center text-lg text-gray-600 mt-6">
+                Dirigido a empresas medianas y grandes en México que dependen de TI, buscando soluciones de DR/BC efectivas y sin complicaciones.
+            </p>
+        </section>
+
+        <!-- The Irresistible Offer Section -->
+        <section class="mb-12">
+            <h2 class="section-title">Nuestra Oferta Irresistible: La Solución 'Inquebrantable'</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-800">Componentes de Valor Clave:</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                        <div class="icon mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-drizzle">
+                                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                                <path d="M8 19v1"></path>
+                                <path d="M8 14v1"></path>
+                                <path d="M16 19v1"></path>
+                                <path d="M16 14v1"></path>
+                                <path d="M12 24v-1"></path>
+                                <path d="M12 19v1"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-blue-700">DRaaS Inteligente en la Nube</h4>
+                        <p class="text-gray-600">Replicación continua y automatizada de sus sistemas críticos a un entorno de nube seguro (AWS, Azure, GCP o local).</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                        <div class="icon mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check">
+                                <rect width="8" height="4" x="8" y="2"></rect>
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                <path d="m9 14 2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-blue-700">Planes de Continuidad Personalizados</h4>
+                        <p class="text-gray-600">Diseñamos, implementamos y probamos regularmente un plan de BC que asegura la continuidad de sus operaciones.</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                        <div class="icon mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer">
+                                <line x1="10" x2="14" y1="2" y2="2"></line>
+                                <line x1="12" x2="12" y1="14" y2="22"></line>
+                                <path d="M12 14V8"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-blue-700">RTO/RPO Garantizados</h4>
+                        <p class="text-gray-600">Definimos contractualmente y garantizamos tiempos de recuperación (RTO en minutos) y puntos de recuperación (RPO en segundos).</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                        <div class="icon mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-blue-700">Monitoreo 24/7 y Gestión</h4>
+                        <p class="text-gray-600">Nuestro Centro de Operaciones monitorea su réplica de DR y está listo para ejecutar el plan en segundos.</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                        <div class="icon mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-test-tube">
+                                <path d="M14.5 2v17.5c0 1.7-1.3 3-3-3H8c-1.7 0-3 1.3-3 3V2z"></path>
+                                <path d="M14.5 2H20"></path>
+                                <path d="M9.5 2H4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-blue-700">Pruebas de Recuperación Regulares</h4>
+                        <p class="text-gray-600">Realizamos pruebas semestrales/anuales completas, documentando resultados y asegurando una recuperación fluida.</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                        <div class="icon mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-blue-700">Expertos en DR/BC en México</h4>
+                        <p class="text-gray-600">Acceso a especialistas locales que entienden sus necesidades y gestionan su resiliencia.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-6 text-gray-800">Nuestras Garantías (Irresistibles):</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-green-50 rounded-xl shadow-sm text-center">
+                        <div class="icon mx-auto mb-3 text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-green-700">Cero Pérdida de Datos</h4>
+                        <p class="text-gray-600">Garantizamos que no perderá datos críticos (RPO en segundos) en los sistemas cubiertos.</p>
+                    </div>
+                    <div class="p-6 bg-green-50 rounded-xl shadow-sm text-center">
+                        <div class="icon mx-auto mb-3 text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-green-700">Recuperación en Minutos</h4>
+                        <p class="text-gray-600">Si no logramos activar sus servicios críticos dentro del RTO acordado, le ofrecemos un crédito.</p>
+                    </div>
+                    <div class="p-6 bg-green-50 rounded-xl shadow-sm text-center">
+                        <div class="icon mx-auto mb-3 text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smile">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" x2="9.01" y1="9" y2="9"></line>
+                                <line x1="15" x2="15.01" y1="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2 text-green-700">Cero Estrés en Pruebas</h4>
+                        <p class="text-gray-600">Nosotros gestionamos las pruebas de principio a fin, con reportes claros y resultados verificables.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-6 text-gray-800">Bonos de Alto Valor:</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-yellow-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-yellow-700">Bono #1: Simulación de Ataque de Ransomware</h4>
+                        <p class="text-gray-600">Valor: $5,000 USD. Pruebe la efectividad de su recuperación ante el desastre más temido.</p>
+                    </div>
+                    <div class="p-6 bg-yellow-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-yellow-700">Bono #2: Plan de Comunicación de Crisis</h4>
+                        <p class="text-gray-600">Valor: $2,500 USD. Plantilla detallada para comunicarse con clientes, empleados y medios.</p>
+                    </div>
+                    <div class="p-6 bg-yellow-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-yellow-700">Bono #3: Taller de Concientización en BC</h4>
+                        <p class="text-gray-600">Valor: $1,500 USD. Sesión con su cúpula directiva para alinear la estrategia de negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scarcity/Urgency & Pricing -->
+        <section class="mb-12">
+            <h2 class="section-title">Actúe Ahora: Urgencia y Precios</h2>
+            <div class="card grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Escasez y Urgencia:</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-3">
+                        <li>Estamos aceptando solo <strong class="text-red-600">5 nuevos clientes</strong> en México este trimestre para asegurar el soporte de más alto nivel.</li>
+                        <li>Nuestra garantía de Cero Pérdida de Datos y Recuperación en Minutos es limitada a contratos firmados antes del <strong class="text-red-600">31 de octubre de 2025</strong>.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Modelo de Precios:</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-3">
+                        <li><strong class="text-blue-700">Cuota de Configuración e Implementación Inicial (Única):</strong> Desde <span class="font-bold">$X,XXX USD</span> (diseño del plan, configuración, primera prueba).</li>
+                        <li><strong class="text-blue-700">Suscripción Mensual (DRaaS y Gestión BC):</strong> Desde <span class="font-bold">$Y,YYY USD/mes</span> (basado en volumen de datos, servidores protegidos, RTO/RPO).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAB Framework Section -->
+        <section class="mb-12">
+            <h2 class="section-title">Marco F.A.B.: Características, Ventajas, Beneficios</h2>
+            <div class="card grid md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <span class="icon mr-3 text-purple-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings">
+                                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.78 1.28a2 2 0 0 0 .73 2.73l.09.09a2 2 0 0 1 .73 2.73l-.78 1.28a2 2 0 0 0 .73 2.73l.15.08a2 2 0 0 1 2 0l.43-.25a2 2 0 0 1 1-1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.78-1.28a2 2 0 0 0-.73-2.73l-.09-.09a2 2 0 0 1-.73-2.73l.78-1.28a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-2 0l-.43.25a2 2 0 0 1-1 1.73V4a2 2 0 0 0-2-2z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </span>
+                        Características
+                    </h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>Replicación continua a la nube.</li>
+                        <li>RTO/RPO garantizados.</li>
+                        <li>Monitoreo 24/7.</li>
+                        <li>Pruebas asistidas.</li>
+                        <li>Expertos locales.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <span class="icon mr-3 text-purple-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.75-.75 1.042-2 2-3-.912-1.42-2.83-2.5-3.5-3.5C7.75 6 10 2 13 2c2.2 0 4 2 4 2s-.75 1.25-2 2c-1.25 1.25-2 2.75-2 4s1 .5 1 1.5c0 1.5-2 2-2 2z"></path>
+                                <path d="M9.4 10.6a2 2 0 1 0 3-3L9.4 10.6Z"></path>
+                            </svg>
+                        </span>
+                        Ventajas
+                    </h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>Elimina infraestructura DR secundaria.</li>
+                        <li>Recuperación automatizada y rápida.</li>
+                        <li>Cumplimiento garantizado de objetivos.</li>
+                        <li>Tranquilidad total ante desastres.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
+                        <span class="icon mr-3 text-purple-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                <polyline points="16 7 22 7 22 13"></polyline>
+                            </svg>
+                        </span>
+                        Beneficios
+                    </h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                        <li>Negocio nunca se detiene.</li>
+                        <li>Evita multas y protege reputación.</li>
+                        <li>Elimina estrés e incertidumbre.</li>
+                        <li>Garantiza continuidad de ingresos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Acquisition Strategy Section -->
+        <section class="mb-12">
+            <h2 class="section-title">Estrategia de Adquisición de Clientes</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Público Objetivo:</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Directores Generales (CEO), CIOs, Directores de Operaciones (COO), y Gerentes de TI de empresas medianas y grandes en México.
+                </p>
+
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Canales y Tácticas:</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-indigo-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-indigo-700">Contenido de Valor</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Webinars: "El Costo Real de la Inactividad".</li>
+                            <li>Guías: "Checklist de Resiliencia Empresarial 2025".</li>
+                            <li>Estudios de Caso de Recuperación Exitosa.</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-indigo-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-indigo-700">Activación Directa</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Cold Email/LinkedIn Outreach personalizado.</li>
+                            <li>Presencia en Eventos de Ciberseguridad en México.</li>
+                            <li>Alianzas Estratégicas con aseguradoras y consultoras.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">Embudo de Adquisición:</h3>
+                <div class="flex flex-wrap justify-center items-center text-center gap-4 text-lg font-medium text-white">
+                    <div class="w-full sm:w-auto p-4 bg-purple-500 rounded-xl shadow-md">Awareness</div>
+                    <div class="hidden sm:block text-purple-500">&rarr;</div>
+                    <div class="w-full sm:w-auto p-4 bg-purple-600 rounded-xl shadow-md">Interest</div>
+                    <div class="hidden sm:block text-purple-600">&rarr;</div>
+                    <div class="w-full sm:w-auto p-4 bg-purple-700 rounded-xl shadow-md">Decision</div>
+                    <div class="hidden sm:block text-purple-700">&rarr;</div>
+                    <div class="w-full sm:w-auto p-4 bg-purple-800 rounded-xl shadow-md">Action</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Solution Section -->
+        <section class="mb-12">
+            <h2 class="section-title">La Solución Detallada: Cómo Funciona</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Principios Clave:</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-gray-700">Réplica Continua y Automática</h4>
+                        <p class="text-gray-600">Sistema de replicación de datos en tiempo real a nuestro entorno de recuperación en la nube, RPO cercano a cero.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-gray-700">Activación Orquestada</h4>
+                        <p class="text-gray-600">Secuencia de arranque predefinida y automatizada de sus aplicaciones en el sitio de recuperación, minimizando el RTO.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-gray-700">Pruebas sin Impacto</h4>
+                        <p class="text-gray-600">Las pruebas se realizan en un entorno aislado, sin afectar su operación de producción, asegurando el cumplimiento de auditorías.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-xl mb-2 text-gray-700">Reducción de Costos DR</h4>
+                        <p class="text-gray-600">Elimina la necesidad de un segundo centro de datos, servidores de respaldo y personal dedicado, reduciendo el TCO.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Pasos Clave de Implementación:</h3>
+                <ol class="relative border-l-4 border-blue-200 ml-4 pl-4">
+                    <li class="mb-6">
+                        <div class="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-2 border border-white"></div>
+                        <h4 class="font-semibold text-xl text-blue-700">Fase 1: Auditoría y Diseño (Semanas 1-3)</h4>
+                        <p class="text-gray-700">Análisis de criticidad, definición de RTO/RPO, diseño de arquitectura y desarrollo del Plan de Recuperación.</p>
+                    </li>
+                    <li class="mb-6">
+                        <div class="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-2 border border-white"></div>
+                        <h4 class="font-semibold text-xl text-blue-700">Fase 2: Configuración y Replicación (Semanas 4-8)</h4>
+                        <p class="text-gray-700">Configuración del entorno de recuperación, replicación inicial de datos y configuración de monitoreo 24/7.</p>
+                    </li>
+                    <li class="mb-6">
+                        <div class="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-2 border border-white"></div>
+                        <h4 class="font-semibold text-xl text-blue-700">Fase 3: Primera Prueba Asistida (Semanas 9-12)</h4>
+                        <p class="text-gray-700">Ejecución de la primera prueba completa de recuperación, ajustes y capacitación a su equipo.</p>
+                    </li>
+                    <li>
+                        <div class="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-2 border border-white"></div>
+                        <h4 class="font-semibold text-xl text-blue-700">Fase 4: Operación Continua y Pruebas Periódicas (Mes 4 en adelante)</h4>
+                        <p class="text-gray-700">Monitoreo continuo, reportes mensuales y pruebas de recuperación semestrales/anuales.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Social Proof and Credibility Section -->
+        <section class="mb-12">
+            <h2 class="section-title">Prueba Social y Credibilidad</h2>
+            <div class="card">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Testimonios y Casos de Estudio:</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <blockquote class="p-6 bg-gray-50 rounded-xl shadow-sm border-l-4 border-yellow-500 italic">
+                        "Tuvimos un corte de energía masivo y, gracias a [Nombre de la Empresa], estábamos operando desde la nube en 25 minutos. No perdimos un solo pedido. Su solución es la mejor póliza de seguro que hemos comprado."
+                        <footer class="mt-2 text-right text-gray-600">- CEO, Empresa de e-commerce en México</footer>
+                    </blockquote>
+                    <blockquote class="p-6 bg-gray-50 rounded-xl shadow-sm border-l-4 border-yellow-500 italic">
+                        "Nuestras auditorías de continuidad del negocio ahora son impecables. Las pruebas automatizadas y los informes de [Nombre de la Empresa] nos dan la tranquilidad de que estamos protegidos."
+                        <footer class="mt-2 text-right text-gray-600">- Director de TI, Cadena de Hoteles</footer>
+                    </blockquote>
+                </div>
+
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Estadísticas de la Industria:</h3>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-3 mb-8">
+                    <li>El costo promedio de la inactividad para empresas en México es de <strong class="text-red-600">$X mil USD por hora</strong>. (Fuente: Reporte de Resiliencia Empresarial en LatAm, 2024)</li>
+                    <li>El <strong class="text-red-600">93%</strong> de las empresas que sufren una pérdida de datos significativa sin un plan de DR eficaz cierran en un año. (Fuente: Gartner)</li>
+                    <li>Solo el <strong class="text-red-600">35%</strong> de las PYMES tienen un plan de recuperación de desastres documentado y probado. (Fuente: Verizon Business)</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Validación de Nuestra Experiencia:</h3>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-3">
+                    <li>Certificaciones de nuestro equipo en Continuidad del Negocio (CBCP, MBCP) y Cloud DR.</li>
+                    <li>Infraestructura de nube con certificaciones (ISO 27001, SOC 2 Type II) y redundancia geográfica en México.</li>
+                    <li>Más de <strong class="text-blue-700">500 pruebas de recuperación</strong> sin fallas exitosamente ejecutadas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Investment and ROI Section -->
+        <section class="mb-12">
+            <h2 class="section-title">Inversión y Retorno de la Inversión (ROI)</h2>
+            <div class="card grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Inversión Requerida:</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-3">
+                        <li><strong class="text-blue-700">Cuota Inicial:</strong> Desde <span class="font-bold">$X,XXX USD</span></li>
+                        <li><strong class="text-blue-700">Suscripción Mensual:</strong> Desde <span class="font-bold">$Y,YYY USD/mes</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Retorno de la Inversión Potencial (ROI):</h3>
+                    <ul class="list-disc list-inside text-lg text-gray-700 space-y-3">
+                        <li><strong class="text-green-700">Ahorro por Evitar Tiempos Muertos:</strong> Cuantifique el costo por hora de inactividad de su negocio.</li>
+                        <li><strong class="text-green-700">Ahorro por Evitar Pérdida de Datos:</strong> Proteja el valor de sus datos y evite multas.</li>
+                        <li><strong class="text-green-700">Reducción de Costos de Infraestructura DR:</strong> Elimine la necesidad de hardware y software duplicado.</li>
+                        <li><strong class="text-green-700">Protección de Reputación y Confianza del Cliente:</strong> Un valor incalculable.</li>
+                    </ul>
+                    <p class="text-lg text-gray-700 mt-4">
+                        <strong class="text-blue-700">Ejemplo de ROI:</strong> Para una empresa con costo de inactividad de $10,000 USD/hora, nuestra solución podría ofrecer un ROI del <strong class="font-bold">350%</strong> en el primer año.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="mb-12 text-center">
+            <h2 class="section-title">Llamada a la Acción: No Espere Más</h2>
+            <div class="card p-8 gradient-bg flex flex-col items-center">
+                <p class="text-2xl font-bold mb-6 text-white">
+                    No espere a que sea demasiado tarde.
+                </p>
+                <a href="#" class="cta-button text-xl">
+                    Solicite hoy mismo su Diagnóstico GRATUITO de Resiliencia Empresarial
+                </a>
+                <p class="text-lg mt-4 text-white opacity-90">
+                    Descubra cómo podemos garantizar que su negocio nunca se detenga.
+                </p>
+                <p class="text-base mt-2 text-white opacity-80">
+                    ¡Cupos Exclusivos! Asegure su blindaje antes del 31 de octubre de 2025.
+                </p>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="text-center py-12 bg-blue-900 text-white rounded-t-3xl">
+            <h2 class="text-3xl font-bold mb-4">Conclusión</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+                En el mundo incierto de hoy, la verdadera seguridad no reside en evitar los desastres, sino en la capacidad de recuperarse de ellos sin perder el ritmo. Con la oferta 'Inquebrantable', no solo le prometemos un plan de recuperación; le garantizamos la continuidad de su negocio, cero pérdida de datos y la tranquilidad de saber que, pase lo que pase, su operación en México seguirá adelante. Es hora de convertir la amenaza en su mayor fortaleza.
+            </p>
+        </section>
+    </div>
+</body>
+</html>
