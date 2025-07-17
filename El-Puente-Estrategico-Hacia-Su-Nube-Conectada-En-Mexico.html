@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Nube Unificada, Negocio Imparable</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Darker blue for titles */
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .subsection-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #1d4ed8; /* Medium blue for subtitles */
+            margin-bottom: 1rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e8f0; /* Light border */
+        }
+        .icon-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+        }
+        .icon-box svg {
+            width: 4rem;
+            height: 4rem;
+            color: #4f46e5; /* Indigo for icons */
+            margin-bottom: 0.75rem;
+        }
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #cbd5e1; /* Light gray line */
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .timeline-item-content {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            width: calc(50% - 2.5rem);
+            position: relative;
+            border: 1px solid #e2e8f0;
+        }
+        .timeline-item-content::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            top: 1.5rem;
+        }
+        .timeline-item:nth-child(even) .timeline-item-content::before {
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #ffffff;
+            right: -10px;
+        }
+        .timeline-item:nth-child(odd) .timeline-item-content::before {
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #ffffff transparent transparent;
+            left: -10px;
+        }
+        .timeline-item-dot {
+            width: 20px;
+            height: 20px;
+            background-color: #4f46e5; /* Indigo dot */
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 1.5rem;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+                transform: translateX(0);
+            }
+            .timeline-item {
+                flex-direction: column !important;
+                align-items: flex-start;
+            }
+            .timeline-item-content {
+                width: calc(100% - 40px);
+                margin-left: 40px;
+            }
+            .timeline-item-content::before {
+                border-width: 10px 10px 0 10px !important;
+                border-color: transparent transparent #ffffff transparent !important;
+                left: 20px !important;
+                top: -10px !important;
+                right: auto !important;
+            }
+            .timeline-item-dot {
+                left: 20px;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="text-center py-8 bg-gradient-to-r from-blue-700 to-indigo-800 text-white rounded-b-3xl shadow-lg mb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Una Nube Unificada, un Negocio Imparable</h1>
+            <p class="text-xl md:text-2xl font-light">Integre su Data Center con la Nube y Gane Agilidad, Reduzca Costos y Centralice la Gestión Multi-Cloud en México.</p>
+            <p class="mt-4 text-sm opacity-80">Proveedor de Soluciones Cloud Híbridas y Gestionadas, con especialización en Integración Completa y Orquestación de Entornos Multi-Cloud.</p>
+        </header>
+
+        <!-- Problem Section -->
+        <section class="card">
+            <h2 class="section-title">El Dolor de la Fragmentación de TI</h2>
+            <p class="text-lg mb-6 text-center">Su infraestructura de TI ha crecido de forma desorganizada, creando una pesadilla de gestión y costos ocultos.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="icon-box">
+                    <!-- Icon for Data Silos -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                    <span class="font-semibold text-lg">Silos de Datos</span>
+                    <p class="text-sm text-gray-600">Información dispersa y difícil de acceder.</p>
+                </div>
+                <div class="icon-box">
+                    <!-- Icon for Fragmented Management -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-split-square-horizontal"><path d="M8 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3"/><path d="M16 5h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/><line x1="12" x2="12" y1="2" y2="22"/></svg>
+                    <span class="font-semibold text-lg">Gestión Fragmentada</span>
+                    <p class="text-sm text-gray-600">Múltiples paneles y procesos ineficientes.</p>
+                </div>
+                <div class="icon-box">
+                    <!-- Icon for Connectivity Issues -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cable-car"><path d="M10 10V6a2 2 0 0 1 4 0v4"/><path d="M2 12s2 0 4 0 4 0 8 0 4 0 4 0"/><path d="M10 16v-2a2 2 0 0 1 4 0v2"/><path d="M12 22V14"/><path d="M12 2v2"/><path d="M14 10h2a3 3 0 0 1 3 3v1a2 2 0 0 1-2 2h-1"/><path d="M10 10H8a3 3 0 0 0-3 3v1a2 2 0 0 0 2 2h1"/></svg>
+                    <span class="font-semibold text-lg">Problemas de Conectividad</span>
+                    <p class="text-sm text-gray-600">Latencia y barreras entre entornos.</p>
+                </div>
+                <div class="icon-box">
+                    <!-- Icon for Security Challenges -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                    <span class="font-semibold text-lg">Desafíos de Seguridad</span>
+                    <p class="text-sm text-gray-600">Puntos ciegos y cumplimiento normativo.</p>
+                </div>
+                <div class="icon-box">
+                    <!-- Icon for Hidden Costs -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <span class="font-semibold text-lg">Costo Oculto</span>
+                    <p class="text-sm text-gray-600">Ineficiencia y oportunidad perdida de innovar.</p>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-base italic text-gray-700">"¿Cuántas horas pierde su equipo de TI intentando conectar sistemas dispares o solucionar problemas de latencia? La ineficiencia, el riesgo de fallas y la oportunidad perdida de innovar drenan su presupuesto."</p>
+        </section>
+
+        <!-- The Offer Section -->
+        <section class="card">
+            <h2 class="section-title">La Oferta Irresistible: Ecosistema Unificado</h2>
+            <p class="text-lg mb-6 text-center">Su Data Center y Nubes Públicas Integrados Perfectamente, con Gestión Centralizada y Garantía de Reducción de Complejidad.</p>
+
+            <h3 class="subsection-title">Componentes de Valor</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <div class="p-4 bg-blue-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid text-blue-600 flex-shrink-0 mt-1"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Arquitectura Híbrida/Multi-Cloud</h4>
+                        <p class="text-sm text-gray-700">Diseño e implementación segura y eficiente de su infraestructura.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-dot"><circle cx="12" cy="12" r="1"/><path d="M19 3H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4l2 2h2l2-2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Plataforma de Orquestación Centralizada</h4>
+                        <p class="text-sm text-gray-700">Monitoreo y gestión de recursos desde un solo panel.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Seguridad y Gobernanza Transversal</h4>
+                        <p class="text-sm text-gray-700">Políticas de seguridad coherentes en todos sus entornos.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M12 8v4"/><path d="M12 12H6"/><path d="M12 12h6"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Optimización de Conectividad y Red</h4>
+                        <p class="text-sm text-gray-700">Baja latencia y alto ancho de banda garantizados.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Automatización de Despliegues</h4>
+                        <p class="text-sm text-gray-700">Acelere la entrega de servicios y reduzca errores.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Equipo de Expertos en México</h4>
+                        <p class="text-sm text-gray-700">Arquitectos e ingenieros especializados con conocimiento local.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Garantías Irresistibles</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="p-4 bg-green-50 rounded-lg text-center border border-green-200">
+                    <h4 class="font-bold text-green-700 text-xl">Integración sin Fricción en 90 Días</h4>
+                    <p class="text-sm text-green-600">2 meses de servicio gratuito si no logramos la conectividad y gestión centralizada inicial.</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg text-center border border-green-200">
+                    <h4 class="font-bold text-green-700 text-xl">Visibilidad 100% de su Infraestructura Híbrida</h4>
+                    <p class="text-sm text-green-600">Vista consolidada y en tiempo real de todos sus recursos.</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg text-center border border-green-200">
+                    <h4 class="font-bold text-green-700 text-xl">Soporte de Incidencias en &lt;15 Minutos (24/7)</h4>
+                    <p class="text-sm text-green-600">Respuesta rápida a cualquier incidente crítico.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Bonos de Alto Valor</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="p-4 bg-yellow-50 rounded-lg text-center border border-yellow-200">
+                    <h4 class="font-bold text-yellow-700 text-xl">Consultoría de Optimización de Costos</h4>
+                    <p class="text-sm text-yellow-600">Valor: $5,000 USD</p>
+                </div>
+                <div class="p-4 bg-yellow-50 rounded-lg text-center border border-yellow-200">
+                    <h4 class="font-bold text-yellow-700 text-xl">Taller de Gobierno y Políticas Multi-Cloud</h4>
+                    <p class="text-sm text-yellow-600">Valor: $3,000 USD</p>
+                </div>
+                <div class="p-4 bg-yellow-50 rounded-lg text-center border border-yellow-200">
+                    <h4 class="font-bold text-yellow-700 text-xl">Plan de Migración de Aplicación Crítica</h4>
+                    <p class="text-sm text-yellow-600">Valor: $4,000 USD</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Escasez y Urgencia</h3>
+            <div class="bg-red-50 border border-red-200 text-red-800 p-4 rounded-lg text-center">
+                <p class="font-semibold mb-2">¡Cupos Limitados!</p>
+                <p>Solo aceptamos <span class="font-bold">3 nuevos proyectos</span> de integración híbrida/multi-cloud por trimestre en México.</p>
+                <p class="mt-2">Nuestra garantía de Integración sin Fricción en 90 Días es para contratos firmados antes del <span class="font-bold">31 de marzo de 2026</span>.</p>
+            </div>
+        </section>
+
+        <!-- Solution Detailed Section -->
+        <section class="card">
+            <h2 class="section-title">La Solución Detallada: Cómo lo Hacemos</h2>
+            <p class="text-lg mb-6 text-center">Resolvemos sus problemas de fragmentación y entregamos una infraestructura TI unificada y ágil.</p>
+
+            <h3 class="subsection-title">Pilares de Nuestra Solución</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="p-4 bg-purple-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye text-purple-600 flex-shrink-0 mt-1"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Visión Centralizada</h4>
+                        <p class="text-sm text-gray-700">Un único panel de control para todos sus recursos on-premise y en la nube.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-purple-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-2"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Orquestación Simplificada</h4>
+                        <p class="text-sm text-gray-700">Aprovisionamiento fácil y automatizado de recursos en cualquier entorno.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-purple-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock text-purple-600 flex-shrink-0 mt-1"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Seguridad sin Compromisos</h4>
+                        <p class="text-sm text-gray-700">Políticas de seguridad extendidas y monitoreo de amenazas unificado.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-purple-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-purple-600 flex-shrink-0 mt-1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Conectividad de Alto Rendimiento</h4>
+                        <p class="text-sm text-gray-700">Conexiones de red dedicadas para movimiento rápido y seguro de datos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Pasos Clave de Implementación</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4 class="font-semibold text-lg text-indigo-700">Fase 1: Diagnóstico y Diseño</h4>
+                        <p class="text-sm text-gray-700">Semanas 1-4: Análisis de infraestructura, aplicaciones y diseño de arquitectura híbrida.</p>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4 class="font-semibold text-lg text-indigo-700">Fase 2: Implementación de Conectividad y Plataforma</h4>
+                        <p class="text-sm text-gray-700">Semanas 5-12: Establecimiento de conexiones de red y despliegue de la Plataforma de Gestión de Nube (CMP).</p>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4 class="font-semibold text-lg text-indigo-700">Fase 3: Automatización, Monitoreo y Pruebas</h4>
+                        <p class="text-sm text-gray-700">Semanas 13-16: Desarrollo de scripts de automatización, configuración de monitoreo y pruebas de rendimiento.</p>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-item-content">
+                        <h4 class="font-semibold text-lg text-indigo-700">Fase 4: Optimización Continua y Expansión</h4>
+                        <p class="text-sm text-gray-700">Mes 5 en adelante: Monitoreo 24/7, optimización de costos y soporte continuo.</p>
+                    </div>
+                    <div class="timeline-item-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="card">
+            <h2 class="section-title">Prueba Social y Credibilidad</h2>
+
+            <h3 class="subsection-title">Testimonios</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="p-4 bg-gray-100 rounded-lg border border-gray-200">
+                    <p class="italic text-gray-700">"Gestionar nuestras nubes era una locura. [Nombre de la Empresa] nos dio una visión unificada y nos permitió automatizar tareas que antes tomaban días. Ahora, nuestra infraestructura trabaja para nosotros."</p>
+                    <p class="font-semibold text-right mt-2">- CIO, Empresa de Manufactura, Querétaro</p>
+                </div>
+                <div class="p-4 bg-gray-100 rounded-lg border border-gray-200">
+                    <p class="italic text-gray-700">"La integración de nuestro data center con Azure era crítica para nuestra expansión. [Nombre de la Empresa] lo hizo posible, con una conectividad impecable y una seguridad que nos da total tranquilidad."</p>
+                    <p class="font-semibold text-right mt-2">- Director de TI, Institución Financiera</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Estadísticas de la Industria</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-center">
+                <div class="p-4 bg-blue-100 rounded-lg border border-blue-200">
+                    <p class="text-4xl font-bold text-blue-800">85%</p>
+                    <p class="text-sm text-blue-700">de las empresas grandes usan nube híbrida/multi-cloud.</p>
+                    <p class="text-xs text-gray-500 mt-1">(Fuente: Flexera 2024)</p>
+                </div>
+                <div class="p-4 bg-blue-100 rounded-lg border border-blue-200">
+                    <p class="text-4xl font-bold text-blue-800">70%</p>
+                    <p class="text-sm text-blue-700">enfrenta desafíos en la gestión de entornos híbridos.</p>
+                    <p class="text-xs text-gray-500 mt-1">(Fuente: Gartner)</p>
+                </div>
+                <div class="p-4 bg-blue-100 rounded-lg border border-blue-200">
+                    <p class="text-4xl font-bold text-blue-800">15-20%</p>
+                    <p class="text-sm text-blue-700">reducción de costos operativos con gestión unificada.</p>
+                    <p class="text-xs text-gray-500 mt-1">(Fuente: IDC)</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Nuestra Experiencia Validada</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Numerosos proyectos de integración híbrida/multi-cloud exitosamente completados en México.</li>
+                <li>Equipo certificado en múltiples nubes (AWS, Azure, GCP) y plataformas de gestión híbrida.</li>
+                <li>Experiencia en cumplimiento normativo (ISO 27001, PCI DSS) para intercambio de datos.</li>
+            </ul>
+        </section>
+
+        <!-- Investment & ROI Section -->
+        <section class="card">
+            <h2 class="section-title">Inversión y Retorno de la Inversión (ROI)</h2>
+
+            <h3 class="subsection-title">Inversión Requerida</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="p-4 bg-indigo-50 rounded-lg border border-indigo-200 text-center">
+                    <h4 class="font-bold text-indigo-700 text-xl">Cuota de Diseño e Implementación Inicial (Única)</h4>
+                    <p class="text-lg font-semibold text-indigo-800">Desde $X,XXX USD</p>
+                    <p class="text-sm text-gray-700">Cubre análisis, diseño de arquitectura y configuración inicial.</p>
+                </div>
+                <div class="p-4 bg-indigo-50 rounded-lg border border-indigo-200 text-center">
+                    <h4 class="font-bold text-indigo-700 text-xl">Suscripción Mensual de Gestión y Soporte Continuo</h4>
+                    <p class="text-lg font-semibold text-indigo-800">Desde $Y,YYY USD/mes</p>
+                    <p class="text-sm text-gray-700">Basado en complejidad, número de entornos y recursos gestionados.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Retorno de la Inversión Potencial (ROI)</h3>
+            <p class="text-center text-lg mb-4">Proyectamos un <span class="font-bold text-green-700">ROI del 200% en el primer año</span> para una empresa típica con entorno híbrido complejo.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-4 bg-green-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down text-green-600 flex-shrink-0 mt-1"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Reducción de Costos Operativos</h4>
+                        <p class="text-sm text-gray-700">Por simplificación, automatización y optimización de recursos.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket text-green-600 flex-shrink-0 mt-1"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5L2 22c0 0 1.8-1.35 3-2.55M10 6.5l-2 2c-.34.34-.5.8-.5 1.3V16c0 .8.7 1.5 1.5 1.5h.5c.8 0 1.5-.7 1.5-1.5v-5.5c0-.5-.16-1-.5-1.3l-2-2c-.23-.23-.35-.5-.35-.75A.75.75 0 0 1 10 5.25c.25 0 .5.12.75.37Z"/><path d="M10 6.5 13.5 3A6 6 0 0 0 17 6.5L13.5 10M2 20l.5-.5c.3-.3.67-.58 1.07-.85M17.5 14c.6-.7 1-1.5 1-2.25v-1.5c0-.75-.4-1.5-1-2.25"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Aceleración de Proyectos</h4>
+                        <p class="text-sm text-gray-700">Despliegue más rápido de recursos y aplicaciones.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-off"><path d="M19.07 19.07A10 10 0 0 1 12 22s-8-4-8-10V5l8-3 3.13 1.17"/><path d="m2 2 20 20"/><path d="M20.94 13.07A10 10 0 0 0 12 2V2"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Reducción de Riesgos de Seguridad</h4>
+                        <p class="text-sm text-gray-700">Menos puntos ciegos y postura de seguridad coherente.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-horizontal"><polyline points="18 8 22 12 18 16"/><polyline points="6 8 2 12 6 16"/><line x1="2" x2="22" y1="12" y2="12"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Mayor Agilidad y Flexibilidad</h4>
+                        <p class="text-sm text-gray-700">Adapte su infraestructura a las demandas del mercado.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg flex items-start space-x-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="7" r="4"/><path d="M22 21a8 8 0 0 0-16 0"/><circle cx="14" cy="7" r="4"/></svg>
+                    <div>
+                        <h4 class="font-medium text-gray-900">Aumento de Productividad del Equipo</h4>
+                        <p class="text-sm text-gray-700">Enfoque en innovación, no en tareas repetitivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="card bg-blue-700 text-white text-center">
+            <h2 class="section-title !text-white">¡Es Hora de Unificar su TI!</h2>
+            <p class="text-xl md:text-2xl font-light mb-8">Deje de gestionar silos y empiece a controlar su ecosistema.</p>
+
+            <a href="#" class="inline-block bg-white text-blue-700 font-bold py-4 px-8 rounded-full text-xl hover:bg-gray-100 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+                Solicite su Auditoría GRATUITA de Complejidad de Infraestructura Híbrida
+            </a>
+
+            <p class="mt-8 text-lg font-light">Descubra cómo podemos unificar su TI para impulsar su negocio en México.</p>
+            <div class="mt-4 space-y-2">
+                <a href="#" class="block text-white underline hover:no-underline">Agende una sesión estratégica de 30 minutos con nuestro Arquitecto Principal.</a>
+                <p class="text-sm italic">¡Cupos Limitados! Asegure su transformación antes del 31 de marzo de 2026.</p>
+                <a href="#" class="block text-white underline hover:no-underline">Descargue un caso de estudio real de "Éxito en la Unificación de Infraestructura Multi-Cloud".</a>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <footer class="text-center py-8">
+            <p class="text-lg font-medium text-gray-700">La era de la TI fragmentada ha terminado. Con 'Ecosistema Unificado', transformamos su compleja infraestructura en una ventaja competitiva unificada y ágil en México.</p>
+            <p class="text-sm text-gray-500 mt-2">Su TI trabajará en armonía para su negocio.</p>
+        </footer>
+    </div>
+</body>
+</html>
