@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: La Nube Industrial para la Fábrica del Futuro en México</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e8f0; /* Light border */
+        }
+        .section-title {
+            font-size: 2.5rem; /* Larger title */
+            font-weight: 700;
+            color: #1e3a8a; /* Dark blue for titles */
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .subsection-title {
+            font-size: 1.75rem; /* Medium title */
+            font-weight: 600;
+            color: #2563eb; /* Medium blue for subtitles */
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .subsection-title svg {
+            margin-right: 0.75rem;
+            color: #2563eb;
+        }
+        .icon-box {
+            background-color: #eff6ff; /* Light blue background for icons */
+            padding: 1rem;
+            border-radius: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+        .icon-box svg {
+            color: #3b82f6; /* Blue icon color */
+            width: 2rem;
+            height: 2rem;
+        }
+        .highlight-text {
+            color: #ef4444; /* Red for pain points */
+            font-weight: 600;
+        }
+        .guarantee-box {
+            background-color: #dcfce7; /* Light green for guarantees */
+            border: 2px solid #22c55e; /* Green border */
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        .guarantee-box svg {
+            color: #16a34a; /* Dark green icon */
+            margin-right: 1rem;
+            min-width: 2rem;
+            min-height: 2rem;
+        }
+        .bonus-box {
+            background-color: #e0f2fe; /* Light blue for bonuses */
+            border: 1px solid #38bdf8; /* Blue border */
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .bonus-box svg {
+            color: #0ea5e9; /* Light blue icon */
+            margin-right: 0.75rem;
+            min-width: 1.5rem;
+            min-height: 1.5rem;
+        }
+        .cta-button {
+            background-color: #f97316; /* Orange button */
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 0.75rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            background-color: #ea580c; /* Darker orange on hover */
+        }
+        .cta-secondary-button {
+            background-color: #3b82f6; /* Blue button */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            margin-right: 1rem;
+        }
+        .cta-secondary-button:hover {
+            background-color: #2563eb; /* Darker blue on hover */
+        }
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #2563eb;
+            border-radius: 50%;
+            border: 3px solid #eff6ff;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 0.45rem;
+            top: 1.5rem;
+            bottom: -0.5rem;
+            width: 2px;
+            background-color: #cbd5e1;
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        .testimonial-box {
+            background-color: #f0f9ff;
+            border: 1px dashed #93c5fd;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        .testimonial-box strong {
+            display: block;
+            margin-top: 0.5rem;
+            font-style: normal;
+            font-weight: 600;
+            color: #1e40af;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="container mx-auto">
+        <!-- Título de la Propuesta -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-blue-800 leading-tight mb-4">
+                Revolucione su Operación en México:
+            </h1>
+            <p class="text-3xl font-semibold text-blue-600 mb-6">
+                Active su Fábrica Inteligente con Edge Computing y Reduzca Tiempos Muertos en un <span class="text-green-600">25% en 120 Días.</span>
+            </p>
+            <p class="text-xl text-gray-600">
+                Proveedor de Soluciones Cloud Híbridas y Gestionadas, con especialización en Edge Computing, IoT Industrial y Transformación Operacional.
+            </p>
+        </header>
+
+        <!-- Introducción y Problema (Pain) -->
+        <section class="card">
+            <h2 class="section-title">El Problema: ¿Qué le Duele?</h2>
+            <div class="flex flex-col md:flex-row items-start md:space-x-8">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="alert-triangle"></i></div>Dolor</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        "Usted sabe que la Industria 4.0 es el futuro de la manufactura y la logística en México, pero está atascado con equipos heredados, una recopilación de datos manual y un tiempo de reacción lento ante fallas. Sus líneas de producción experimentan <span class="highlight-text">paros no planificados</span>, sus cadenas de suministro carecen de visibilidad en tiempo real, y cada día que no optimiza sus operaciones con tecnología avanzada, está perdiendo competitividad, producción y márgenes."
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="trending-down"></i></div>Ampliación del Dolor</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        "La promesa de la 'fábrica inteligente' es una quimera si su infraestructura no puede procesar datos en milisegundos desde el piso de producción. Sus equipos de mantenimiento reaccionan en lugar de predecir, sus sistemas están aislados y la información crítica se queda atrapada en silos. ¿Cuánto le cuesta cada hora de inactividad de una máquina? ¿Cuántas oportunidades pierde por no poder optimizar sus procesos en tiempo real? Esta es la diferencia entre liderar el mercado o ser superado por la competencia ágil."
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        <strong class="text-blue-700">Contexto Actual del Cliente:</strong> Empresas manufactureras, de logística, automotrices y del sector energético en México que buscan digitalizar sus operaciones pero necesitan una solución robusta y localmente adaptada.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- La Oferta Irresistible ($100M Offer) -->
+        <section class="card">
+            <h2 class="section-title">Nuestra Oferta Irresistible: 'Edge Industrial Power'</h2>
+            <p class="text-2xl font-bold text-center text-blue-700 mb-8">
+                Su Operación del Borde, Optimizada, Segura y Gestionada en México, con Reducción Garantizada del 25% en Tiempos Muertos.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="package"></i></div>Componentes de Valor</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start"><div class="icon-box"><i data-lucide="cloud"></i></div><span class="font-medium text-gray-700">Infraestructura Edge Computing Dedicada en México:</span> Procesamiento de datos en milisegundos directamente en sus sitios.</li>
+                        <li class="flex items-start"><div class="icon-box"><i data-lucide="wifi"></i></div><span class="font-medium text-gray-700">Plataforma de IoT Industrial (IIoT) Gestionada:</span> Ingesta, procesamiento, análisis y visualización de datos de sensores.</li>
+                        <li class="flex items-start"><div class="icon-box"><i data-lucide="cpu"></i></div><span class="font-medium text-gray-700">Análisis Predictivo en el Borde (Edge AI/ML):</span> Modelos de IA/ML para mantenimiento predictivo y optimización.</li>
+                        <li class="flex items-start"><div class="icon-box"><i data-lucide="link"></i></div><span class="font-medium text-gray-700">Conectividad Híbrida Robusta y Segura:</span> Flujo de datos seguro entre Edge y nube central.</li>
+                        <li class="flex items-start"><div class="icon-box"><i data-lucide="users"></i></div><span class="font-medium text-gray-700">Equipo de Ingenieros de Operaciones Industriales (OT/IT) en México:</span> Soporte 24/7 y optimización continua.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="award"></i></div>Garantías (Irresistibles)</h3>
+                    <div class="guarantee-box">
+                        <i data-lucide="check-circle"></i>
+                        <p class="text-lg font-semibold text-green-800">
+                            Garantía de Reducción del <span class="font-extrabold">25% en Tiempos Muertos No Planificados en 120 Días.</span> Si no lo logramos, 3 meses de servicio gratuito.
+                        </p>
+                    </div>
+                    <div class="guarantee-box">
+                        <i data-lucide="check-circle"></i>
+                        <p class="text-lg font-semibold text-green-800">
+                            Garantía de Latencia <span class="font-extrabold">&lt;50ms</span> para Procesamiento Crítico en el Borde.
+                        </p>
+                    </div>
+                    <div class="guarantee-box">
+                        <i data-lucide="check-circle"></i>
+                        <p class="text-lg font-semibold text-green-800">
+                            Garantía de Integración Exitosa con sus Sistemas OT Existentes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="gift"></i></div>Bonos (Alto Valor)</h3>
+                    <div class="bonus-box">
+                        <i data-lucide="lightbulb"></i>
+                        <p class="text-lg"><strong>Bono #1:</strong> Consultoría de Optimización de Procesos (Valor: <span class="font-bold text-blue-700">$6,000 USD</span>).</p>
+                    </div>
+                    <div class="bonus-box">
+                        <i data-lucide="bar-chart-2"></i>
+                        <p class="text-lg"><strong>Bono #2:</strong> Licencias de Software de Visualización de Datos Industriales (Valor: <span class="font-bold text-blue-700">$4,000 USD</span>).</p>
+                    </div>
+                    <div class="bonus-box">
+                        <i data-lucide="hard-drive"></i>
+                        <p class="text-lg"><strong>Bono #3:</strong> Plan de Respaldo y Recuperación para Datos del Borde (Valor: <span class="font-bold text-blue-700">$2,500 USD</span>).</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="timer"></i></div>Escasez / Urgencia</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        "Estamos limitando nuestra oferta 'Edge Industrial Power' a solo <span class="font-bold text-red-600">3 clientes</span> del sector industrial este semestre para asegurar la máxima atención y resultados. ¡Los espacios son limitados!"
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        "Esta garantía de reducción del 25% en tiempos muertos es una audaz promesa, disponible solo para los clientes que firmen contrato antes del <span class="font-bold text-red-600">15 de agosto de 2025.</span>"
+                    </p>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="dollar-sign"></i></div>Precios</h3>
+                    <p class="text-lg leading-relaxed">
+                        Modelo híbrido (Suscripción + Hardware/Software de Borde).
+                    </p>
+                    <ul class="list-disc list-inside text-lg ml-4">
+                        <li><strong>Cuota de Diseño e Implementación Inicial:</strong> $X,XXX USD</li>
+                        <li><strong>Suscripción Mensual de Gestión y Soporte:</strong> Desde $Y,YYY USD/mes (basado en activos/sensores).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="subsection-title flex-center"><div class="icon-box"><i data-lucide="zap"></i></div>F.A.B. Framework</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 bg-blue-50 rounded-xl shadow-inner">
+                    <i data-lucide="settings" class="w-8 h-8 text-blue-600 mx-auto mb-3"></i>
+                    <h4 class="font-bold text-xl mb-2 text-blue-800">Características</h4>
+                    <p class="text-md">Nodos Edge robustos, plataforma IIoT gestionada, IA en el borde, expertos OT/IT, conectividad optimizada.</p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-xl shadow-inner">
+                    <i data-lucide="trending-up" class="w-8 h-8 text-green-600 mx-auto mb-3"></i>
+                    <h4 class="font-bold text-xl mb-2 text-green-800">Ventajas</h4>
+                    <p class="text-md">Procesamiento ultra-rápido, mantenimiento predictivo real, visibilidad completa, reducción drástica de tiempos muertos, integración fluida.</p>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl shadow-inner">
+                    <i data-lucide="star" class="w-8 h-8 text-purple-600 mx-auto mb-3"></i>
+                    <h4 class="font-bold text-xl mb-2 text-purple-800">Beneficios</h4>
+                    <p class="text-md">Fábrica eficiente y rentable, elimina paros, extiende vida útil, decisiones en tiempo real, datos como activo estratégico.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estrategia de Adquisición de Clientes ($100M Leads) -->
+        <section class="card">
+            <h2 class="section-title">Estrategia de Adquisición de Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="target"></i></div>Público Objetivo</h3>
+                    <p class="text-lg mb-4">
+                        Directores de Operaciones (COO), Directores de Planta, Directores de Mantenimiento, CIOs/CTOs de empresas manufactureras, automotrices, de bienes de consumo y logística en México.
+                    </p>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="megaphone"></i></div>Canales y Tácticas</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start"><i data-lucide="monitor" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Contenido de 'Resolución de Problemas Críticos':</span> Webinars, Guías, Estudios de Caso.</li>
+                        <li class="flex items-start"><i data-lucide="mail" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Activación Directa:</span> Cold Email/LinkedIn Outreach altamente dirigido.</li>
+                        <li class="flex items-start"><i data-lucide="calendar" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Ferias Industriales y Eventos Sectoriales (México):</span> Demostraciones en vivo.</li>
+                        <li class="flex items-start"><i data-lucide="handshake" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Alianzas Estratégicas:</span> Con proveedores de maquinaria y automatización.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="funnel"></i></div>Embudo de Adquisición</h3>
+                    <ol class="list-decimal list-inside text-lg space-y-3 ml-4">
+                        <li><strong>Awareness:</strong> Contenido educativo, presencia en ferias.</li>
+                        <li><strong>Interest:</strong> Oferta de 'Diagnóstico Gratuito de Eficiencia Operacional en su Planta'.</li>
+                        <li><strong>Decision:</strong> Presentación de la Propuesta 'Edge Industrial Power' con garantías y bonos.</li>
+                        <li><strong>Action:</strong> Visita a planta y Negociación de Contrato.</li>
+                    </ol>
+                    <p class="text-lg mt-4">
+                        <strong class="text-blue-700">Generación de 'Leads Calientes':</strong> Identificar empresas que invierten en nuevas líneas, modernizan plantas o expresan desafíos en eficiencia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- La Solución Detallada -->
+        <section class="card">
+            <h2 class="section-title">La Solución Detallada: Cómo Entregamos la Promesa</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="lightbulb-off"></i></div>Cómo Resolvemos el Problema</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start"><i data-lucide="activity" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Optimización en Tiempo Real:</span> Procesamiento de datos en sitio para acciones correctivas inmediatas.</li>
+                        <li class="flex items-start"><i data-lucide="shield-check" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Mantenimiento Predictivo Eficaz:</span> Modelos de IA para predecir fallas y reducir paros no planificados.</li>
+                        <li class="flex items-start"><i data-lucide="eye" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Visibilidad Operacional Completa:</span> Plataforma IIoT centraliza datos y ofrece tableros de control intuitivos.</li>
+                        <li class="flex items-start"><i data-lucide="merge" class="w-6 h-6 text-blue-500 mr-3 mt-1"></i><span class="font-medium text-gray-700">Integración Fluida IT/OT:</span> Equipo experto que asegura integración armónica y adopción exitosa.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="workflow"></i></div>Pasos Clave de Implementación / Proceso de Entrega</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item">
+                            <p class="font-semibold text-lg text-blue-700">Fase 1: Auditoría Operacional y Diseño de Arquitectura Edge</p>
+                            <p class="text-gray-600">Semanas 1-4: Análisis in situ, diseño de arquitectura y estrategia de conectividad.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="font-semibold text-lg text-blue-700">Fase 2: Implementación de Hardware y Plataforma IIoT</p>
+                            <p class="text-gray-600">Semanas 5-12: Instalación de nodos Edge, configuración de plataforma IIoT, integración de sensores.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="font-semibold text-lg text-blue-700">Fase 3: Despliegue de Modelos Predictivos y Habilitación</p>
+                            <p class="text-gray-600">Semanas 13-16: Despliegue de modelos IA/ML, capacitación de equipos.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="font-semibold text-lg text-blue-700">Fase 4: Optimización Continua y Soporte</p>
+                            <p class="text-gray-600">Mes 5 en adelante: Monitoreo 24/7, ajuste de modelos, soporte técnico y consultoría.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prueba Social y Credibilidad -->
+        <section class="card">
+            <h2 class="section-title">Prueba Social y Credibilidad</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="message-square"></i></div>Testimonios y Casos de Estudio</h3>
+                    <div class="testimonial-box">
+                        <p>"Gracias a [Nombre de la Empresa], hemos reducido nuestros tiempos muertos en la línea de ensamble en un 30% en solo 4 meses, lo que se traduce en un ahorro de cientos de miles de dólares anuales."</p>
+                        <strong>- Director de Planta de una armadora automotriz</strong>
+                    </div>
+                    <div class="testimonial-box">
+                        <p>"Su solución de Edge Computing nos dio la visibilidad en tiempo real que necesitábamos en nuestra cadena de suministro, permitiéndonos optimizar rutas y reducir costos de transporte."</p>
+                        <strong>- Estudio de caso detallado con KPIs de logística</strong>
+                    </div>
+                    <p class="text-lg italic text-gray-600">Fotos y videos de implementaciones exitosas en plantas industriales reales en México.</p>
+                </div>
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="trending-up"></i></div>Estadísticas de la Industria</h3>
+                    <ul class="list-disc list-inside text-lg space-y-3 ml-4">
+                        <li>"Los paros no planificados le cuestan a la industria manufacturera mexicana miles de millones de dólares anualmente." <span class="font-semibold text-blue-700">(Fuente: CONCAMIN)</span></li>
+                        <li>"El mantenimiento predictivo puede reducir los costos de mantenimiento en un 25-30% y los tiempos muertos en un 35-50%." <span class="font-semibold text-blue-700">(Fuente: Deloitte, KPMG)</span></li>
+                        <li>"El mercado de IoT Industrial en México se proyecta con un crecimiento de doble dígito." <span class="font-semibold text-blue-700">(Fuente: Reporte de Mercado de IoT en LatAm)</span></li>
+                    </ul>
+                    <h3 class="subsection-title mt-8"><div class="icon-box"><i data-lucide="award"></i></div>Validación de Nuestra Experiencia</h3>
+                    <ul class="list-disc list-inside text-lg space-y-3 ml-4">
+                        <li>Certificaciones de nuestro equipo en OT, IoT Industrial y análisis de datos.</li>
+                        <li>Alianzas estratégicas con líderes tecnológicos (Rockwell Automation, Siemens, Schneider Electric).</li>
+                        <li>Membresías en cámaras industriales (CANACINTRA, AMIA) y asociaciones de logística en México.</li>
+                        <li>Proyectos de referencia en grandes corporativos industriales en México.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inversión y Retorno de la Inversión (ROI) -->
+        <section class="card">
+            <h2 class="section-title">Inversión y Retorno de la Inversión (ROI)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="dollar-sign"></i></div>Inversión Requerida</h3>
+                    <ul class="list-disc list-inside text-lg space-y-3 ml-4">
+                        <li><strong>Cuota de Diseño e Implementación Inicial:</strong> $X,XXX USD (Cubre análisis, diseño de arquitectura Edge y configuración de plataforma IIoT, incluyendo hardware/software Edge).</li>
+                        <li><strong>Suscripción Mensual de Gestión y Soporte:</strong> Desde $Y,YYY USD/mes (basado en activos monitoreados, volumen de datos y nivel de servicio).</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="subsection-title"><div class="icon-box"><i data-lucide="bar-chart-2"></i></div>Retorno de la Inversión Potencial (ROI)</h3>
+                    <p class="text-lg mb-4">
+                        <strong class="text-blue-700">Fórmula:</strong> ROI = ((Beneficios Totales - Costo Total de Inversión) / Costo Total de Inversión) * 100
+                    </p>
+                    <p class="text-lg font-semibold text-blue-800 mb-2">Beneficios Clave:</p>
+                    <ul class="list-disc list-inside text-lg space-y-2 ml-4">
+                        <li>Ahorro por Reducción de Tiempos Muertos (<span class="font-bold text-green-600">25% garantizado</span>).</li>
+                        <li>Reducción de Costos de Mantenimiento (<span class="font-bold text-green-600">15-20%</span>).</li>
+                        <li>Aumento de la Eficiencia Operativa (OEE, utilización de activos).</li>
+                        <li>Mejora en la Calidad del Producto.</li>
+                        <li>Mayor Agilidad y Capacidad de Innovación.</li>
+                    </ul>
+                    <p class="text-lg mt-4 leading-relaxed">
+                        <strong class="text-blue-700">Ejemplo de ROI (Caso Típico):</strong> Para una planta manufacturera mediana con un costo anual de $500,000 USD por paros no planificados, proyectamos un <span class="font-extrabold text-green-600">ROI del 200% en el primer año.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Llamada a Acción (Call to Action - CTA) -->
+        <section class="card text-center">
+            <h2 class="section-title">¡Es Hora de Actuar!</h2>
+            <p class="text-2xl font-bold text-blue-800 mb-6 leading-relaxed">
+                Deje de reaccionar y empiece a predecir.
+            </p>
+            <a href="#" class="cta-button">
+                Solicite su Diagnóstico GRATUITO de Eficiencia Operacional
+            </a>
+            <p class="text-xl text-gray-700 mt-6 mb-4">
+                Descubra cómo podemos reducir sus tiempos muertos en un 25%.
+            </p>
+            <div class="flex flex-wrap justify-center mt-4">
+                <a href="#" class="cta-secondary-button">
+                    Agende una visita exploratoria
+                </a>
+                <a href="#" class="cta-secondary-button">
+                    ¡Últimos 3 Cupos! Asegure su transformación antes del 15 de agosto de 2025.
+                </a>
+            </div>
+            <p class="text-lg italic text-gray-600 mt-6">
+                [Video corto demostrativo de la solución Edge Industrial Power en acción]
+            </p>
+        </section>
+
+        <!-- Conclusión -->
+        <section class="card">
+            <h2 class="section-title">Conclusión</h2>
+            <p class="text-lg leading-relaxed text-center">
+                La digitalización no es solo para el back-office; es el motor que impulsará la próxima generación de eficiencia y competitividad en la industria mexicana. Con la oferta 'Edge Industrial Power', no solo le proporcionamos tecnología avanzada; le entregamos una reducción tangible y garantizada de sus tiempos muertos, una optimización operativa sin precedentes y la capacidad de transformar sus datos en una ventaja estratégica. Es el momento de llevar su operación al futuro.
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
