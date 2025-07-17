@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Propuesta Comercial - Data Insight Engine</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Un fondo suave */
+            color: #334155; /* Color de texto principal */
+        }
+        .container-infographic {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* Bordes más redondeados */
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra más pronunciada */
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1e293b; /* slate-900 */
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .subsection-title {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            color: #3b82f6; /* blue-500 */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #bfdbfe; /* blue-200 */
+            padding-bottom: 0.5rem;
+        }
+        .highlight-text {
+            color: #ef4444; /* red-500 */
+            font-weight: 700;
+        }
+        .bullet-point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        .bullet-icon {
+            color: #22c55e; /* green-500 */
+            font-size: 1.25rem;
+            margin-right: 0.5rem;
+            line-height: 1.5rem; /* Alinea con el texto */
+        }
+        .guarantee-card {
+            background-color: #ecfdf5; /* green-50 */
+            border: 1px solid #a7f3d0; /* green-200 */
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .guarantee-icon {
+            color: #059669; /* green-700 */
+            font-size: 1.75rem;
+            margin-right: 1rem;
+        }
+        .bonus-card {
+            background-color: #e0f2fe; /* blue-50 */
+            border: 1px solid #93c5fd; /* blue-200 */
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .bonus-icon {
+            color: #2563eb; /* blue-700 */
+            font-size: 1.75rem;
+            margin-right: 1rem;
+        }
+        .cta-button {
+            background-color: #3b82f6; /* blue-500 */
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 9999px; /* full rounded */
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+            display: block;
+            width: fit-content;
+            margin: 2rem auto 0 auto;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2563eb; /* blue-700 */
+        }
+        .stat-card {
+            background-color: #fefce8; /* yellow-50 */
+            border: 1px solid #fde68a; /* yellow-200 */
+            border-radius: 1rem;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d97706; /* amber-600 */
+        }
+        .stat-description {
+            font-size: 1rem;
+            color: #4b5563; /* gray-600 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-infographic">
+
+        <!-- Título de la Propuesta -->
+        <div class="section-card bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+                Desbloquee el Poder de sus Datos en México:
+            </h1>
+            <p class="text-xl md:text-2xl font-light">
+                Consolide su Información, Obtenga Insights Predictivos y Aumente sus Ingresos un <span class="highlight-text text-yellow-300">15%</span> con una Plataforma de Datos Inteligente.
+            </p>
+        </div>
+
+        <!-- Introducción y Problema (Pain) -->
+        <div class="section-card">
+            <h2 class="section-title">El Dolor de los Datos Dispersos 😔</h2>
+            <p class="text-lg mb-4">
+                Usted tiene <span class="font-semibold">datos masivos dispersos en silos</span> (CRM, ERP, redes sociales, logs, sensores), pero no puede conectarlos, analizarlos ni extraer valor de ellos. Sus decisiones se basan en intuiciones o en reportes desactualizados.
+            </p>
+            <p class="text-lg mb-4">
+                Su equipo pierde semanas compilando datos, en lugar de analizarlos. La visión de una inteligencia de negocio proactiva y predictiva, que le diga qué pasará y por qué, parece inalcanzable.
+            </p>
+            <p class="text-lg font-semibold highlight-text">
+                Está operando a ciegas en un mercado impulsado por los datos, perdiendo oportunidades y reaccionando, en lugar de anticipar.
+            </p>
+            <p class="text-lg mt-4 italic">
+                "¿Cuántas veces se ha preguntado por qué un producto no vende o qué segmentos de clientes son los más rentables, y no ha podido obtener una respuesta rápida y confiable? La incapacidad de capitalizar sus datos le está costando dinero."
+            </p>
+            <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <h3 class="subsection-title !text-blue-700">Contexto Actual del Cliente:</h3>
+                <p class="text-base">
+                    Empresas medianas y grandes en México que generan y acumulan grandes volúmenes de datos de múltiples fuentes, pero carecen de una estrategia unificada para la gestión, almacenamiento y análisis. Buscan una solución para centralizar, limpiar y explotar sus datos de forma estratégica en la nube.
+                </p>
+            </div>
+        </div>
+
+        <!-- La Oferta Irresistible ($100M Offer) -->
+        <div class="section-card">
+            <h2 class="section-title">Nuestra Oferta Irresistible: Data Insight Engine ✨</h2>
+            <p class="text-lg mb-6">
+                Su Plataforma Unificada de Data Lake y Data Warehouse en la Nube, Conectando Todos sus Datos y Entregando Insights Accionables que Impulsan su Rentabilidad.
+            </p>
+
+            <h3 class="subsection-title">Componentes de Valor:</h3>
+            <ul class="list-none p-0">
+                <li class="bullet-point">
+                    <span class="bullet-icon">✅</span>
+                    <span><strong class="text-blue-600">Arquitectura en la Nube:</strong> Diseño e Implementación de Data Lake & Data Warehouse robustos y escalables.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✅</span>
+                    <span><strong class="text-blue-600">Ingesta y Transformación Automatizada:</strong> Pipelines ETL/ELT para datos de calidad y consistencia.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✅</span>
+                    <span><strong class="text-blue-600">Dashboards Inteligentes:</strong> Modelos de datos y dashboards personalizados con insights accionables.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✅</span>
+                    <span><strong class="text-blue-600">Analítica Predictiva y ML:</strong> Capacidad para pronosticar tendencias y anticipar comportamientos.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✅</span>
+                    <span><strong class="text-blue-600">Gobernanza y Seguridad:</strong> Control de acceso basado en roles y cifrado de datos.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✅</span>
+                    <span><strong class="text-blue-600">Capacitación y Empoderamiento:</strong> Entrenamos a sus equipos para el auto-servicio BI.</span>
+                </li>
+            </ul>
+
+            <h3 class="subsection-title mt-8">Garantías Irresistibles:</h3>
+            <div class="guarantee-card">
+                <span class="guarantee-icon">🛡️</span>
+                <div>
+                    <p class="font-semibold">Unificación y Consolidación del 80% de sus Fuentes de Datos Clave en 90 Días:</p>
+                    <p class="text-sm">Si no lo logramos, un mes de servicio gratuito.</p>
+                </div>
+            </div>
+            <div class="guarantee-card">
+                <span class="guarantee-icon">📊</span>
+                <div>
+                    <p class="font-semibold">Entrega de Primeros 5 Dashboards Accionables en 60 Días:</p>
+                    <p class="text-sm">Insights clave para su negocio, rápidos y operativos.</p>
+                </div>
+            </div>
+            <div class="guarantee-card">
+                <span class="guarantee-icon">📈</span>
+                <div>
+                    <p class="font-semibold">Mejora del 15% en la Eficiencia de la Toma de Decisiones:</p>
+                    <p class="text-sm">Se traducirá en un 15% de aumento en métricas clave de ingresos o eficiencia (basado en KPIs predefinidos).</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title mt-8">Bonos de Alto Valor:</h3>
+            <div class="bonus-card">
+                <span class="bonus-icon">🎁</span>
+                <div>
+                    <p class="font-semibold">Bono #1: Consultoría de Estrategia de Monetización de Datos</p>
+                    <p class="text-sm">Valor: $6,000 USD. Taller para identificar nuevas fuentes de ingresos.</p>
+                </div>
+            </div>
+            <div class="bonus-card">
+                <span class="bonus-icon">🔗</span>
+                <div>
+                    <p class="font-semibold">Bono #2: Módulo de Integración con Fuentes de Datos Externas</p>
+                    <p class="text-sm">Valor: $4,000 USD. Configuración para integrar datos de mercado, proveedores o socios.</p>
+                </div>
+            </div>
+            <div class="bonus-card">
+                <span class="bonus-icon">🎓</span>
+                <div>
+                    <p class="font-semibold">Bono #3: Taller de Introducción a la Ciencia de Datos para Ejecutivos</p>
+                    <p class="text-sm">Valor: $3,000 USD. Sesión exclusiva para su equipo de liderazgo.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 p-4 bg-red-50 rounded-lg border border-red-200 text-center">
+                <h3 class="subsection-title !text-red-700">¡Escasez y Urgencia!</h3>
+                <p class="text-lg font-semibold mb-2">
+                    Solo aceptamos <span class="highlight-text">3 nuevos proyectos</span> 'Data Insight Engine' por trimestre en México. ¡Espacios Limitados!
+                </p>
+                <p class="text-lg font-semibold">
+                    Nuestra garantía del 15% de aumento está disponible para contratos firmados antes del <span class="highlight-text">30 de septiembre de 2026</span>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Estrategia de Adquisición de Clientes ($100M Leads) -->
+        <div class="section-card">
+            <h2 class="section-title">Estrategia de Adquisición de Clientes 🎯</h2>
+            <h3 class="subsection-title">Público Objetivo:</h3>
+            <p class="text-lg mb-4">
+                Directores Generales (CEO), CIOs, CDOs, Directores de Marketing, Directores Comerciales y VPs de Operaciones de empresas medianas y grandes en México que luchan con la fragmentación de datos o el deseo de implementar analítica avanzada.
+            </p>
+
+            <h3 class="subsection-title mt-6">Canales y Tácticas:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-gray-700">Contenido de Valor:</h4>
+                    <ul class="list-disc list-inside text-base">
+                        <li>Webinars: "De Datos Brutos a Dólares"</li>
+                        <li>Guías: "El Roadmap para su Data Lake y Data Warehouse"</li>
+                        <li>Estudios de Caso de Empresas Transformadas por Datos</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-gray-700">Activación Directa:</h4>
+                    <ul class="list-disc list-inside text-base">
+                        <li>Cold Email/LinkedIn Outreach (Personalizado)</li>
+                        <li>Participación en Eventos de Business Intelligence y Analítica</li>
+                        <li>Alianzas Estratégicas con consultoras y proveedores de ERP/CRM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="subsection-title mt-6">Embudo de Adquisición (Simplificado):</h3>
+            <div class="flex flex-wrap justify-around text-center mt-4">
+                <div class="w-1/2 md:w-1/4 p-2">
+                    <div class="bg-blue-100 p-3 rounded-lg shadow-sm">
+                        <p class="font-semibold text-blue-800">Awareness</p>
+                        <p class="text-sm">Contenido sobre valor de datos</p>
+                    </div>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-2">
+                    <div class="bg-green-100 p-3 rounded-lg shadow-sm">
+                        <p class="font-semibold text-green-800">Interest</p>
+                        <p class="text-sm">Auditoría GRATUITA</p>
+                    </div>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-2">
+                    <div class="bg-yellow-100 p-3 rounded-lg shadow-sm">
+                        <p class="font-semibold text-yellow-800">Decision</p>
+                        <p class="text-sm">Presentación Propuesta</p>
+                    </div>
+                </div>
+                <div class="w-1/2 md:w-1/4 p-2">
+                    <div class="bg-red-100 p-3 rounded-lg shadow-sm">
+                        <p class="font-semibold text-red-800">Action</p>
+                        <p class="text-sm">Cierre de Contrato</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- La Solución Detallada -->
+        <div class="section-card">
+            <h2 class="section-title">La Solución Detallada: Cómo Entregamos Valor 🚀</h2>
+
+            <h3 class="subsection-title">Resolviendo el Problema:</h3>
+            <ul class="list-none p-0">
+                <li class="bullet-point">
+                    <span class="bullet-icon">✔️</span>
+                    <span><strong class="text-blue-600">Consolidación de Datos sin Esfuerzo:</strong> Repositorio centralizado para todos sus datos, eliminando silos.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✔️</span>
+                    <span><strong class="text-blue-600">Transformación para la Acción:</strong> Datos limpios y organizados en modelos fáciles de entender.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✔️</span>
+                    <span><strong class="text-blue-600">Capacidad Predictiva:</strong> Aplicación de Machine Learning para pronosticar comportamientos y recomendar acciones.</span>
+                </li>
+                <li class="bullet-point">
+                    <span class="bullet-icon">✔️</span>
+                    <span><strong class="text-blue-600">Democratización del Acceso:</strong> Herramientas de BI de autoservicio para decisiones basadas en evidencia.</span>
+                </li>
+            </ul>
+
+            <h3 class="subsection-title mt-8">Pasos Clave de Implementación:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="font-semibold text-blue-600 mb-1">Fase 1: Descubrimiento y Diseño (Semanas 1-4)</p>
+                    <p class="text-sm">Entrevistas, mapeo de fuentes, diseño de arquitectura Data Lake/Warehouse.</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="font-semibold text-blue-600 mb-1">Fase 2: Implementación de Plataforma (Semanas 5-12)</p>
+                    <p class="text-sm">Configuración de infraestructura cloud, construcción de pipelines ETL/ELT.</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="font-semibold text-blue-600 mb-1">Fase 3: Desarrollo de Modelos y Dashboards (Semanas 13-20)</p>
+                    <p class="text-sm">Modelos de datos, primeros dashboards interactivos, capacitación inicial.</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <p class="font-semibold text-blue-600 mb-1">Fase 4: Optimización y Soporte Continuo (Mes 6 en adelante)</p>
+                    <p class="text-sm">Monitoreo, optimización de costos, desarrollo de ML, soporte técnico.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prueba Social y Credibilidad -->
+        <div class="section-card">
+            <h2 class="section-title">Prueba Social y Credibilidad ✅</h2>
+
+            <h3 class="subsection-title">Testimonios y Casos de Estudio:</h3>
+            <div class="bg-blue-50 p-4 rounded-lg italic mb-4 border border-blue-200">
+                <p>"Antes, nuestras decisiones eran a menudo 'intuición'. Con el 'Data Insight Engine', hemos aumentado nuestras ventas en línea un 18% en el último trimestre."</p>
+                <p class="text-right font-semibold text-sm">- Director Comercial, Empresa de Retail</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg italic mb-4 border border-blue-200">
+                <p>"La integración de datos nos dio una visión 360 del cliente que nunca tuvimos. Ahora podemos personalizar nuestras ofertas como nunca antes."</p>
+                <p class="text-right font-semibold text-sm">- Director de Marketing, Cadena de Restaurantes</p>
+            </div>
+
+            <h3 class="subsection-title mt-8">Estadísticas de la Industria:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                <div class="stat-card">
+                    <p class="stat-number">15%</p>
+                    <p class="stat-description">Las empresas que usan datos superan a sus competidores en un 15%. (Forrester)</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">32%</p>
+                    <p class="stat-description">Solo el 32% de los datos empresariales son realmente utilizados para decisiones. (Dell EMC)</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-number">20% CAGR</p>
+                    <p class="stat-description">Mercado de Data Lakes/Warehouses crecerá 20% hasta 2028. (Mordor Intelligence)</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title mt-8">Nuestra Experiencia Comprobada:</h3>
+            <ul class="list-disc list-inside text-base">
+                <li>Número de proyectos de Data Lake, Data Warehouse y BI implementados exitosamente en México.</li>
+                <li>Certificaciones de nuestro equipo en plataformas de datos en la nube (AWS, Azure, Google Cloud).</li>
+                <li>Experiencia comprobada en la integración de datos de diversas fuentes y tecnologías.</li>
+                <li>Casos de éxito específicos en industrias con grandes volúmenes de datos (Retail, Finanzas, Manufactura).</li>
+            </ul>
+        </div>
+
+        <!-- Inversión y Retorno de la Inversión (ROI) -->
+        <div class="section-card">
+            <h2 class="section-title">Inversión y Retorno Potencial (ROI) 💰</h2>
+
+            <h3 class="subsection-title">Inversión Requerida:</h3>
+            <div class="bg-gray-100 p-4 rounded-lg mb-4 border border-gray-200">
+                <p class="font-semibold text-lg mb-1">Cuota de Diseño e Implementación de Arquitectura Inicial (Única):</p>
+                <p class="text-base">Desde <span class="font-bold highlight-text">$X,XXX USD</span> (Análisis, diseño y configuración inicial).</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg border border-gray-200">
+                <p class="font-semibold text-lg mb-1">Suscripción Mensual de Gestión de Plataforma y Servicios de Analítica:</p>
+                <p class="text-base">Desde <span class="font-bold highlight-text">$Y,YYY USD/mes</span> (Basado en volumen de datos, fuentes, usuarios y complejidad).</p>
+            </div>
+
+            <h3 class="subsection-title mt-8">Retorno de la Inversión Potencial (ROI):</h3>
+            <p class="text-lg mb-4">
+                <span class="font-semibold highlight-text">ROI = ((Beneficios Totales - Costo Total de Inversión) / Costo Total de Inversión) * 100</span>
+            </p>
+            <h4 class="font-semibold text-lg mb-2 text-gray-700">Beneficios Clave:</h4>
+            <ul class="list-disc list-inside text-base">
+                <li><strong class="text-blue-600">Aumento Directo de Ingresos:</strong> Por decisiones de marketing/ventas más inteligentes (<span class="font-bold highlight-text">15% garantizado</span>).</li>
+                <li><strong class="text-blue-600">Reducción de Costos Operacionales:</strong> Automatización y optimización de procesos.</li>
+                <li><strong class="text-blue-600">Mayor Eficiencia en la Toma de Decisiones:</strong> Reacción más rápida a oportunidades y amenazas.</li>
+                <li><strong class="text-blue-600">Diferenciación Competitiva:</strong> Innovación en productos, servicios y experiencias.</li>
+                <li><strong class="text-blue-600">Cumplimiento Normativo Simplificado:</strong> Mejor gobernanza y trazabilidad de datos.</li>
+            </ul>
+            <div class="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
+                <p class="text-lg font-semibold text-green-700">Ejemplo de ROI (Caso Típico):</p>
+                <p class="text-base">Para una empresa con $50M USD en ingresos anuales, con un aumento del 15% en ventas y $50K USD en reducción de costos, el ROI proyectado podría ser del <span class="font-bold highlight-text">350% en el primer año</span>.</p>
+            </div>
+        </div>
+
+        <!-- Llamada a la Acción (Call to Action - CTA) -->
+        <div class="section-card bg-gradient-to-r from-green-500 to-teal-600 text-white text-center py-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Es Hora de Actuar! 🚀</h2>
+            <p class="text-xl md:text-2xl font-light mb-8">
+                Deje de adivinar y empiece a saber.
+            </p>
+            <a href="#" class="cta-button bg-yellow-400 hover:bg-yellow-500 text-gray-900">
+                Solicite hoy mismo su Auditoría GRATUITA de Madurez de Datos
+            </a>
+            <p class="text-lg mt-6">
+                Descubra cómo podemos desbloquear el verdadero poder de su información para aumentar sus ingresos un <span class="highlight-text text-yellow-300">15%</span>, ¡garantizado!
+            </p>
+            <div class="mt-8 text-lg">
+                <p class="mb-2">Haga clic aquí para agendar una <span class="font-semibold">sesión estratégica de 30 minutos</span> con nuestro Arquitecto Líder en Datos.</p>
+                <p class="mb-2"><span class="font-semibold highlight-text text-yellow-300">¡Cupos Limitados!</span> Asegure su plataforma inteligente de datos antes del 30 de septiembre de 2026.</p>
+                <p>Descargue nuestra <span class="font-semibold">"Guía Ejecutiva: Cómo Convertir sus Datos en Oro en la Nube"</span>.</p>
+            </div>
+        </div>
+
+        <!-- Conclusión -->
+        <div class="section-card text-center">
+            <h2 class="section-title">Conclusión 🌟</h2>
+            <p class="text-lg mb-4">
+                En la economía actual, los datos son el motor de su crecimiento. Con la oferta <span class="font-bold text-blue-600">'Data Insight Engine'</span>, no solo le proporcionamos la tecnología; le entregamos la capacidad de transformar sus datos brutos en una fuente inagotable de insights accionables.
+            </p>
+            <p class="text-xl font-semibold text-blue-700">
+                Aumente sus ingresos un <span class="highlight-text">15% garantizado</span>, optimice sus operaciones y tome decisiones que impulsen a su negocio a nuevas alturas en el dinámico mercado mexicano.
+            </p>
+            <p class="text-2xl font-bold mt-6 text-indigo-700">
+                ¡Es hora de que sus datos trabajen para usted!
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
