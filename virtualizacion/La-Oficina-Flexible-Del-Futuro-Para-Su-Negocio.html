@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: La Oficina Flexible del Futuro</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Un color de fondo suave */
+            color: #334155; /* Color de texto principal */
+        }
+        .container {
+            max-width: 1000px; /* Ancho máximo para el contenido */
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.5rem; /* Tamaño de fuente para títulos de sección */
+            font-weight: 700;
+            color: #1e3a8a; /* Azul oscuro para títulos */
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff; /* Fondo blanco para las tarjetas */
+            border-radius: 0.75rem; /* Esquinas redondeadas */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra suave */
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .sub-title {
+            font-size: 1.75rem; /* Tamaño de fuente para subtítulos */
+            font-weight: 600;
+            color: #1f2937; /* Gris oscuro para subtítulos */
+            margin-bottom: 1rem;
+        }
+        .text-highlight {
+            color: #4f46e5; /* Azul vibrante para texto destacado */
+            font-weight: 600;
+        }
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        .list-icon {
+            color: #10b981; /* Verde esmeralda para iconos de lista */
+            margin-right: 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1.5; /* Ajuste de altura de línea para alinear con el texto */
+        }
+        .cta-button {
+            background-color: #4f46e5; /* Azul para el botón CTA */
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+        }
+        .cta-button:hover {
+            background-color: #6366f1; /* Azul más claro al pasar el ratón */
+        }
+        .grid-cols-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
+        }
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            .sub-title {
+                font-size: 1.5rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container">
+        <!-- Título Principal de la Infografía -->
+        <header class="text-center py-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                Libere su Negocio con la Oficina 100% Digital en México
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mt-2">
+                Acceso Seguro desde Cualquier Lugar, Flexibilidad para su Equipo y Ahorro del 30% en Gestión de TI.
+            </p>
+            <p class="text-sm text-gray-500 mt-4">
+                <span class="font-semibold">Punto de Vista:</span> Proveedor de Soluciones Cloud Gestionadas, especializado en DaaS/VDI y espacios de trabajo digitales.
+            </p>
+        </header>
+
+        <!-- Sección 1: El Problema (Pain) -->
+        <section class="card">
+            <h2 class="section-title">El Desafío Actual: ¿Por qué su Negocio Necesita un Cambio?</h2>
+            <div class="space-y-4 text-lg">
+                <p>
+                    <span class="font-bold text-red-600">Dolor:</span> Su equipo necesita trabajar desde cualquier lugar, pero sus métodos actuales lo limitan. La gestión de dispositivos locales es una pesadilla de seguridad y mantenimiento, las aplicaciones críticas solo están disponibles en la oficina, y el costo de renovar equipos físicos es un drenaje constante de capital.
+                </p>
+                <p>
+                    <span class="font-bold text-red-600">Ampliación del Dolor:</span>
+                    ¿Cuántas horas pierde su equipo de TI configurando laptops, actualizando software o solucionando problemas de compatibilidad? ¿Está realmente seguro de que los datos sensibles no están en riesgo cuando sus empleados trabajan fuera de la oficina? Sus competidores ya están atrayendo talento ofreciendo verdadera flexibilidad laboral.
+                </p>
+                <p class="mt-4 text-gray-700">
+                    <span class="font-semibold">Contexto del Cliente:</span> Empresas medianas y grandes en México que buscan flexibilidad laboral, tienen muchos empleados que acceden a aplicaciones específicas o sensibles, o necesitan gestionar un parque de equipos diverso y costoso.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección 2: La Oferta Irresistible -->
+        <section class="card">
+            <h2 class="section-title">La Solución 'Workplace Anywhere': Su Oficina Digital Definitiva</h2>
+            <p class="text-center text-lg mb-6">
+                Su Infraestructura de Escritorios y Aplicaciones Totalmente Virtualizada en la Nube, con Seguridad de Grado Empresarial y Gestión Simplificada.
+            </p>
+            <h3 class="sub-title">Componentes de Valor Clave:</h3>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li class="list-item"><span class="list-icon">✅</span> Diseño e Implementación de DaaS/VDI en la Nube personalizado.</li>
+                <li class="list-item"><span class="list-icon">✅</span> Acceso Seguro y Unificado a Aplicaciones Críticas desde cualquier dispositivo.</li>
+                <li class="list-item"><span class="list-icon">✅</span> Gestión Centralizada y Automatizada de Escritorios.</li>
+                <li class="list-item"><span class="list-icon">✅</span> Optimización de Costos y Recursos: pague solo por lo que usa.</li>
+                <li class="list-item"><span class="list-icon">✅</span> Seguridad Inherente y Protección de Datos: sus datos siempre seguros en la nube.</li>
+                <li class="list-item"><span class="list-icon">✅</span> Soporte Técnico Especializado en México (24/7 Opcional).</li>
+            </ul>
+
+            <h3 class="sub-title mt-8">Garantías Irresistibles:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-lg">
+                <div class="p-4 bg-blue-50 rounded-lg shadow-sm">
+                    <p class="font-bold text-blue-700">Despliegue de la Primera Fase en 45 Días</p>
+                    <p class="text-sm">Si no, un mes de servicio gratuito.</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-lg shadow-sm">
+                    <p class="font-bold text-green-700">Ahorro del 30% en Gastos de Gestión de TI y Hardware en 12 Meses</p>
+                    <p class="text-sm">Proyectado y garantizado.</p>
+                </div>
+                <div class="p-4 bg-purple-50 rounded-lg shadow-sm">
+                    <p class="font-bold text-purple-700">Experiencia de Usuario Superior Garantizada</p>
+                    <p class="text-sm">Trabajamos hasta cumplir los KPIs de rendimiento.</p>
+                </div>
+            </div>
+
+            <h3 class="sub-title mt-8">Bonos de Alto Valor:</h3>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li class="list-item"><span class="list-icon">🎁</span> Bono #1: Módulo de Acceso Remoto Seguro para No-DaaS Users (Valor: $3,000 USD).</li>
+                <li class="list-item"><span class="list-icon">🎁</span> Bono #2: Taller de Productividad con Microsoft 365/Google Workspace Integrado (Valor: $2,000 USD).</li>
+                <li class="list-item"><span class="list-icon">🎁</span> Bono #3: Plan Estratégico de Hardware (Thin Clients) (Valor: $1,500 USD).</li>
+            </ul>
+
+            <h3 class="sub-title mt-8">Escasez y Urgencia:</h3>
+            <p class="text-lg">
+                Solo aceptamos <span class="font-bold text-red-500">4 nuevos proyectos</span> de Workplace Anywhere por trimestre en México.
+            </p>
+            <p class="text-lg">
+                Nuestra garantía de ahorro del 30% es válida para contratos firmados antes del <span class="font-bold text-red-500">30 de abril de 2026</span>.
+            </p>
+        </section>
+
+        <!-- Sección 3: Marco FAB (Características, Ventajas, Beneficios) -->
+        <section class="card">
+            <h2 class="section-title">FAB Framework: ¿Qué Obtendrá su Negocio?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-lg">
+                <div class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Características</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>DaaS/VDI en la nube</li>
+                        <li>Acceso universal y seguro</li>
+                        <li>Gestión centralizada</li>
+                        <li>Optimización de costos</li>
+                        <li>Seguridad de datos</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Ventajas</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Trabaje desde cualquier lugar</li>
+                        <li>Elimine costos de hardware</li>
+                        <li>Simplifique la gestión de TI</li>
+                        <li>Proteja sus datos críticos</li>
+                        <li>Mejore la experiencia del usuario</li>
+                        <li>Mayor flexibilidad laboral</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Beneficios</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Fuerza laboral más productiva y adaptable</li>
+                        <li>Reducción del 30% garantizado en gastos de TI</li>
+                        <li>Continuidad operativa en cualquier escenario</li>
+                        <li>Atracción y retención de talento</li>
+                        <li>Posicione a su empresa como líder</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Proceso de Implementación -->
+        <section class="card">
+            <h2 class="section-title">Nuestro Proceso de Implementación: De la Evaluación a la Operación</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+                <div class="p-4 bg-blue-50 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-blue-700 text-xl mb-2">Fase 1: Evaluación y Diseño (Semanas 1-2)</h3>
+                    <p>Análisis de necesidades, perfiles de usuario y diseño de la arquitectura DaaS/VDI.</p>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-blue-700 text-xl mb-2">Fase 2: Configuración Piloto (Semanas 3-6)</h3>
+                    <p>Configuración inicial de la plataforma, virtualización de aplicaciones y despliegue del entorno piloto.</p>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-blue-700 text-xl mb-2">Fase 3: Pruebas y Despliegue Gradual (Semanas 7-12)</h3>
+                    <p>Pruebas intensivas con usuarios piloto, ajustes y despliegue gradual a grupos más amplios.</p>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-blue-700 text-xl mb-2">Fase 4: Operación Continua y Soporte (Mes 4 en adelante)</h3>
+                    <p>Monitoreo 24/7, gestión de parches, actualizaciones y soporte técnico continuo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 5: Prueba Social y Credibilidad -->
+        <section class="card">
+            <h2 class="section-title">Nuestra Credibilidad: Casos de Éxito y Datos de la Industria</h2>
+            <h3 class="sub-title">Testimonios Reales:</h3>
+            <div class="space-y-4 text-lg italic text-gray-700">
+                <p>"Nuestra empresa de servicios pudo implementar el trabajo remoto de forma segura para 200 empleados en menos de un mes. La gestión de TI es ahora un 70% más eficiente." <br><span class="font-normal not-italic">- Director de Operaciones, Empresa de Servicios en Guadalajara</span></p>
+                <p>"La flexibilidad que nos dieron los escritorios virtuales es invaluable. Atraemos y retenemos talento más fácilmente, y nuestros datos están más seguros que nunca." <br><span class="font-normal not-italic">- Director de RRHH, Empresa de Telemarketing</span></p>
+            </div>
+
+            <h3 class="sub-title mt-8">Estadísticas de la Industria:</h3>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li class="list-item"><span class="list-icon">📊</span> El <span class="font-bold text-text-highlight">70%</span> de las empresas en México están adoptando modelos de trabajo híbridos o remotos.</li>
+                <li class="list-item"><span class="list-icon">📊</span> Reducción del costo total de propiedad de la infraestructura de escritorio en un <span class="font-bold text-text-highlight">20-40%</span> con DaaS. (Gartner)</li>
+                <li class="list-item"><span class="list-icon">📊</span> El <span class="font-bold text-text-highlight">68%</span> de las brechas de datos están vinculadas a la exposición de dispositivos de usuario final. (Verizon)</li>
+            </ul>
+
+            <h3 class="sub-title mt-8">Nuestra Experiencia:</h3>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li class="list-item"><span class="list-icon">⭐</span> Múltiples implementaciones de DaaS/VDI exitosas en México.</li>
+                <li class="list-item"><span class="list-icon">⭐</span> Equipo certificado en plataformas líderes (Microsoft, AWS, VMware).</li>
+                <li class="list-item"><span class="list-icon">⭐</span> Alianzas estratégicas con Microsoft, Amazon, Google y VMware.</li>
+            </ul>
+        </section>
+
+        <!-- Sección 6: Inversión y Retorno de la Inversión (ROI) -->
+        <section class="card">
+            <h2 class="section-title">Inversión y Retorno Potencial (ROI)</h2>
+            <h3 class="sub-title">Inversión Requerida:</h3>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li class="list-item"><span class="list-icon">💰</span> Cuota de Diseño e Implementación Inicial (Única): Desde <span class="font-bold">$X,XXX USD</span>.</li>
+                <li class="list-item"><span class="list-icon">💰</span> Suscripción Mensual por Escritorio Virtual/Usuario: Desde <span class="font-bold">$Y,YYY USD/usuario/mes</span>.</li>
+            </ul>
+
+            <h3 class="sub-title mt-8">Beneficios Clave del ROI:</h3>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li class="list-item"><span class="list-icon">📈</span> Ahorro Directo en Hardware (CapEx).</li>
+                <li class="list-item"><span class="list-icon">📈</span> Reducción de Costos de Gestión de TI.</li>
+                <li class="list-item"><span class="list-icon">📈</span> Aumento de Productividad y Flexibilidad.</li>
+                <li class="list-item"><span class="list-icon">📈</span> Reducción de Riesgos de Seguridad y Cumplimiento.</li>
+                <li class="list-item"><span class="list-icon">📈</span> Atracción y Retención de Talento.</li>
+            </ul>
+            <p class="text-lg mt-4">
+                <span class="font-bold text-text-highlight">Ejemplo de ROI (Caso Típico):</span> Para una empresa con 150 usuarios, proyectamos un ROI del <span class="font-bold text-green-600">200% en el primer año</span>, incluyendo el ahorro del 30% en gastos de gestión de TI y hardware.
+            </p>
+        </section>
+
+        <!-- Sección 7: Llamada a la Acción (CTA) -->
+        <section class="card bg-blue-700 text-white text-center">
+            <h2 class="section-title text-white">¡Es Hora de Transformar su Negocio!</h2>
+            <p class="text-2xl font-bold mb-6">
+                Deje de gestionar escritorios y empiece a potenciar su negocio.
+            </p>
+            <a href="#" class="cta-button">
+                Solicite hoy mismo su Diagnóstico GRATUITO de Infraestructura de Usuario Final
+            </a>
+            <p class="text-lg mt-4">
+                Descubra cómo podemos crear su Oficina 100% Digital con un ahorro garantizado del 30%.
+            </p>
+            <div class="mt-8 space-y-3">
+                <p class="text-lg">
+                    <a href="#" class="underline hover:no-underline">Haga clic aquí para agendar una sesión estratégica de 20 minutos con nuestro Arquitecto Líder.</a>
+                </p>
+                <p class="text-lg font-bold text-yellow-300">
+                    ¡Cupos Limitados! Asegure su transformación antes del 30 de abril de 2026.
+                </p>
+                <p class="text-lg">
+                    <a href="#" class="underline hover:no-underline">Descargue nuestro Whitepaper: Los Beneficios Ocultos de DaaS para su Negocio en México.</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Conclusión -->
+        <footer class="text-center py-8">
+            <h2 class="section-title">El Futuro del Trabajo es Flexible, Seguro y Digital.</h2>
+            <p class="text-lg text-gray-700">
+                Con la oferta 'Workplace Anywhere', no solo le proporcionamos tecnología; le entregamos una infraestructura de escritorio que libera a su equipo de las limitaciones físicas, reduce sus costos de TI en un <span class="font-bold text-green-600">30% garantizado</span> y blinda sus datos, permitiéndole construir la Oficina Flexible y Productiva del Futuro en México. Es hora de transformar la forma en que trabaja.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
