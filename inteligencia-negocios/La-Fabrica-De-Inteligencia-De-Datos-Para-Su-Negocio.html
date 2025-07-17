@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Fábrica de Inteligencia de Datos</title>
+    <!-- Carga de Tailwind CSS CDN para estilos rápidos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Un color de fondo suave */
+            color: #334155; /* Color de texto principal */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* Bordes más redondeados */
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra más pronunciada */
+            border: 1px solid #e2e8f0; /* Borde sutil */
+        }
+        .icon-box {
+            background-color: #e0f2fe; /* Azul claro para los iconos */
+            color: #0284c7; /* Azul más oscuro para los iconos */
+            padding: 0.75rem;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: 1rem;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #6366f1, #8b5cf6); /* Degradado púrpura-azul */
+            color: white;
+        }
+        .btn-primary {
+            background-color: #4f46e5; /* Azul índigo */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #4338ca; /* Azul índigo más oscuro al pasar el ratón */
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .feature-item svg {
+            flex-shrink: 0;
+            margin-right: 0.75rem;
+            color: #10b981; /* Verde esmeralda para los checks */
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        .guarantee-box {
+            background-color: #ecfdf5; /* Verde claro para garantías */
+            border-left: 5px solid #10b981; /* Borde verde */
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .bonus-box {
+            background-color: #fffbeb; /* Amarillo claro para bonos */
+            border-left: 5px solid #f59e0b; /* Borde naranja */
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .price-box {
+            background-color: #eef2ff; /* Azul muy claro para precios */
+            border: 1px solid #c7d2fe;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        .testimonial-card {
+            background-color: #f8fafc; /* Gris muy claro para testimonios */
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .step-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .step-number {
+            background-color: #6366f1; /* Azul púrpura */
+            color: white;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container">
+        <!-- Título Principal de la Infografía -->
+        <header class="text-center py-8 mb-8 gradient-bg rounded-xl shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                Desbloquee la Inteligencia Oculta en sus Datos
+            </h1>
+            <p class="text-xl md:text-2xl font-light">
+                Transforme su Negocio en México con Decisiones Basadas en Evidencia y Multiplique su Rentabilidad en 120 Días.
+            </p>
+        </header>
+
+        <!-- Sección 2: Introducción y Problema (Pain) -->
+        <section class="section-card">
+            <h2 class="text-3xl font-bold text-center mb-6 text-red-600">El Dolor: Datos Atrapados, Decisiones Intuitivas</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <div class="icon-box mx-auto md:mx-0">💡</div>
+                    <h3 class="text-2xl font-semibold mb-3">¿Sus datos son el nuevo petróleo, pero se siente abrumado?</h3>
+                    <p class="text-lg mb-4">
+                        Su empresa genera montañas de información (ventas, clientes, operaciones), pero está atrapada en silos, formatos inconsistentes y hojas de cálculo interminables.
+                    </p>
+                    <p class="text-lg">
+                        Sus equipos carecen de una visión unificada y en tiempo real, lo que lleva a decisiones intuitivas, oportunidades perdidas y la incapacidad de predecir tendencias.
+                    </p>
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <div class="icon-box mx-auto md:mx-0">💸</div>
+                    <h3 class="text-2xl font-semibold mb-3">El Costo de la Ignorancia de sus Propios Datos</h3>
+                    <p class="text-lg mb-4">
+                        ¿Cuánto le cuesta no saber qué productos son rentables o por qué sus clientes se van? Sus competidores ya usan la inteligencia de datos para robarle cuota de mercado.
+                    </p>
+                    <p class="text-lg">
+                        El costo de la ignorancia de sus propios datos es su rentabilidad y su futuro.
+                    </p>
+                </div>
+            </div>
+            <p class="mt-6 text-center text-gray-600 italic">
+                Dirigido a empresas medianas y grandes en México con datos dispersos y que buscan el valor de la analítica.
+            </p>
+        </section>
+
+        <!-- Sección 3: La Oferta Irresistible ($100M Offer) -->
+        <section class="section-card">
+            <h2 class="text-3xl font-bold text-center mb-8 text-indigo-600">La Oferta Irresistible: Solución 'Visión 360 de Datos'</h2>
+            <p class="text-xl text-center mb-8">
+                Su Plataforma de Inteligencia de Negocio Gestionada y Lista para Usar en la Nube, con Decisiones Basadas en Datos y Crecimiento Garantizado.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700">Componentes de Valor</h3>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-lg">Plataforma de Datos en la Nube Llave en Mano.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75.0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75.0 00-1.06 1.06l2.25 2.25a.75.75.0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-lg">Integración Automatizada de Todas sus Fuentes de Datos.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75.0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75.0 00-1.06 1.06l2.25 2.25a.75.75.0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-lg">Desarrollo de Paneles de Control (Dashboards) y Reportes Inteligentes.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75.0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75.0 00-1.06 1.06l2.25 2.25a.75.75.0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-lg">Capacitación y Empoderamiento de su Equipo de Negocio.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75.0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75.0 00-1.06 1.06l2.25 2.25a.75.75.0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-lg">Análisis Predictivo y Modelado Básico (Bono de Inteligencia).</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75.0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75.0 00-1.06 1.06l2.25 2.25a.75.75.0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-lg">Soporte Continuo y Optimización de la Plataforma de Datos.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-green-700">Garantías Irresistibles</h3>
+                    <div class="guarantee-box">
+                        <p class="font-semibold">✅ Implementación Completa de Plataforma y 3 Dashboards Críticos en 60 Días:</p>
+                        <p>Si no lo logramos, le acreditamos un mes de servicio gratuito.</p>
+                    </div>
+                    <div class="guarantee-box">
+                        <p class="font-semibold">📈 Aumento del 15% en la Visibilidad de KPIs Críticos en 90 Días:</p>
+                        <p>Sus líderes tendrán al menos un 15% más de claridad sobre sus indicadores clave.</p>
+                    </div>
+                    <div class="guarantee-box">
+                        <p class="font-semibold">💡 Sesiones de Análisis Accionables Mensuales:</p>
+                        <p>Identificaremos al menos 2 ideas de negocio accionables basadas en sus datos.</p>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-4 text-orange-700">Bonos de Alto Valor</h3>
+                    <div class="bonus-box">
+                        <p class="font-semibold">🎁 Bono #1: Módulo de Integración con Plataformas de Marketing Digital (Valor: $3,000 USD)</p>
+                    </div>
+                    <div class="bonus-box">
+                        <p class="font-semibold">🎁 Bono #2: Taller de Visualización de Datos para Ejecutivos (Valor: $2,000 USD)</p>
+                    </div>
+                    <div class="bonus-box">
+                        <p class="font-semibold">🎁 Bono #3: Plan Maestro de Datos (Valor: $1,500 USD)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-red-50 p-6 rounded-xl border border-red-200 text-center mb-8">
+                <h3 class="text-2xl font-bold text-red-700 mb-3">¡Escasez y Urgencia!</h3>
+                <p class="text-lg mb-2">Limitado a <span class="font-bold text-red-600">solo 4 nuevos clientes</span> este trimestre en México.</p>
+                <p class="text-lg">Garantía de implementación en 60 días válida solo para contratos firmados antes del <span class="font-bold text-red-600">31 de diciembre de 2025</span>.</p>
+            </div>
+
+            <div class="price-box">
+                <h3 class="text-2xl font-bold text-indigo-700 mb-4">Precios</h3>
+                <p class="text-xl mb-2">
+                    <span class="font-semibold">Cuota de Diseño e Implementación Inicial:</span> Desde <span class="text-green-600 font-bold">$X,XXX USD</span>
+                </p>
+                <p class="text-xl">
+                    <span class="font-semibold">Suscripción Mensual de Plataforma y Servicios Gestionados:</span> Desde <span class="text-green-600 font-bold">$Y,YYY USD/mes</span>
+                </p>
+                <p class="text-sm text-gray-500 mt-2">(Basado en volumen de datos, número de fuentes y usuarios)</p>
+            </div>
+        </section>
+
+        <!-- Sección 4: Estrategia de Adquisición de Clientes -->
+        <section class="section-card">
+            <h2 class="text-3xl font-bold text-center mb-6 text-purple-600">Estrategia de Adquisición de Clientes</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-700">Público Objetivo</h3>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li>Directores Generales (CEO)</li>
+                        <li>Directores de Marketing</li>
+                        <li>Directores Comerciales</li>
+                        <li>Directores Financieros (CFO)</li>
+                        <li>CIOs de empresas en México</li>
+                    </ul>
+                    <p class="text-md text-gray-600 mt-4">
+                        Empresas que reconocen el valor de los datos pero luchan por extraerlo.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-700">Canales y Tácticas</h3>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li>Webinars: "El Dinero que Está Dejando en la Mesa por No Entender sus Datos"</li>
+                        <li>Guías: "El Manual para Transformar Datos en Ventas y Eficiencia"</li>
+                        <li>Estudios de Caso de ROI por BI</li>
+                        <li>Cold Email/LinkedIn Outreach Personalizado</li>
+                        <li>Eventos de Negocios y Transformación Digital en México</li>
+                        <li>Alianzas Estratégicas (proveedores de ERP/CRM, consultoras)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 bg-blue-50 p-6 rounded-xl border border-blue-200">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-4 text-center">Embudo de Adquisición</h3>
+                <div class="flex flex-wrap justify-around items-center text-center text-lg font-medium">
+                    <div class="p-2">Awareness <span class="text-blue-500">➡️</span></div>
+                    <div class="p-2">Interest <span class="text-blue-500">➡️</span></div>
+                    <div class="p-2">Decision <span class="text-blue-500">➡️</span></div>
+                    <div class="p-2">Action</div>
+                </div>
+                <p class="text-center text-gray-600 mt-4">
+                    Generación de 'Leads Calientes': Empresas invirtiendo en marketing digital, con alta rotación de clientes, problemas de inventario o en sectores competitivos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección 5: La Solución Detallada y Proceso de Entrega -->
+        <section class="section-card">
+            <h2 class="text-3xl font-bold text-center mb-6 text-teal-600">La Solución Detallada: Cómo Entregamos la Promesa</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-teal-700">Cómo Resolveremos el Problema</h3>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li><span class="font-semibold">Unificación de Datos:</span> Eliminamos silos, creando un "Single Source of Truth" en la nube.</li>
+                        <li><span class="font-semibold">Automatización de Informes:</span> Adiós a hojas de cálculo manuales, dashboards en tiempo real.</li>
+                        <li><span class="font-semibold">Democratización del Acceso:</span> Líderes acceden a insights sin depender de TI.</li>
+                        <li><span class="font-semibold">Identificación de Oportunidades:</span> Descubrimos patrones y tendencias invisibles.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-teal-700">Pasos Clave de Implementación</h3>
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <p class="text-lg"><span class="font-semibold">Fase 1:</span> Descubrimiento de Datos y Necesidades de Negocio (Semanas 1-2)</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <p class="text-lg"><span class="font-semibold">Fase 2:</span> Diseño de la Arquitectura de Datos y Selección de Herramientas (Semanas 3-4)</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <p class="text-lg"><span class="font-semibold">Fase 3:</span> Integración de Datos y Construcción de Dashboards Iniciales (Semanas 5-8)</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <p class="text-lg"><span class="font-semibold">Fase 4:</span> Capacitación, Optimización y Análisis Continuo (Mes 3 en adelante)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 6: Prueba Social y Credibilidad -->
+        <section class="section-card">
+            <h2 class="text-3xl font-bold text-center mb-6 text-blue-600">Prueba Social y Credibilidad</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Testimonios y Casos de Estudio</h3>
+                    <div class="testimonial-card">
+                        <p class="italic mb-2">"Antes, vivíamos en la oscuridad de los datos. Ahora, tomamos decisiones de marketing con precisión láser, y nuestras ventas han crecido un 18%."</p>
+                        <p class="font-semibold text-right">- Director de Marketing, Cadena de Retail en México</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="italic mb-2">"Su plataforma de BI nos permitió identificar los cuellos de botella exactos en nuestra cadena de suministro, reduciendo costos operativos en un 12%."</p>
+                        <p class="font-semibold text-right">- Empresa de Manufactura (Caso de Estudio Detallado)</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Estadísticas de la Industria</h3>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li>Empresas que usan datos superan a competidores en un <span class="font-bold">20% en rentabilidad</span> (Forrester).</li>
+                        <li>El <span class="font-bold">70% de los datos empresariales no se utilizan</span> para decisiones (Gartner).</li>
+                        <li>Mercado de BI en México crece un <span class="font-bold">15% anual</span> (Reportes de Mercado de TI).</li>
+                    </ul>
+                    <h3 class="text-2xl font-semibold mt-6 mb-4 text-blue-700">Nuestra Experiencia</h3>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li>Múltiples proyectos exitosos para empresas mexicanas.</li>
+                        <li>Equipo con certificaciones en AWS, Azure, GCP, Tableau, Power BI.</li>
+                        <li>Calificación promedio de satisfacción del cliente: <span class="font-bold">4.8/5 estrellas</span>.</li>
+                        <li>Alianzas estratégicas con Microsoft, Google, AWS, Tableau, Power BI.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 7: Inversión y Retorno de la Inversión (ROI) -->
+        <section class="section-card">
+            <h2 class="text-3xl font-bold text-center mb-6 text-emerald-600">Inversión y Retorno de la Inversión (ROI)</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-emerald-700">Inversión Requerida</h3>
+                    <p class="text-xl mb-2">
+                        <span class="font-semibold">Cuota de Diseño e Implementación Inicial:</span> Desde <span class="text-green-600 font-bold">$X,XXX USD</span>
+                    </p>
+                    <p class="text-xl">
+                        <span class="font-semibold">Suscripción Mensual de Plataforma y Servicios Gestionados:</span> Desde <span class="text-green-600 font-bold">$Y,YYY USD/mes</span>
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">(Cubre análisis, arquitectura, integración, dashboards iniciales)</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-emerald-700">Retorno de la Inversión Potencial (ROI)</h3>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li><span class="font-semibold">Aumento Directo de Ingresos:</span> Identificación de nuevas oportunidades de venta.</li>
+                        <li><span class="font-semibold">Reducción de Costos Operacionales:</span> Ahorros tangibles en logística, inventario, procesos.</li>
+                        <li><span class="font-semibold">Mejora en la Retención de Clientes:</span> Reducir el churn.</li>
+                        <li><span class="font-semibold">Optimización de Decisiones de Inversión:</span> Evitar gastos innecesarios.</li>
+                        <li><span class="font-semibold">Ahorro en Contratación de Personal Especializado:</span> Evitar altos salarios de científicos de datos internos.</li>
+                    </ul>
+                    <div class="bg-emerald-50 p-4 rounded-lg mt-4 text-center">
+                        <p class="text-lg font-semibold text-emerald-800">Ejemplo de ROI Típico:</p>
+                        <p class="text-xl font-bold text-emerald-600">¡250% de ROI en el primer año!</p>
+                        <p class="text-sm text-gray-600">(Para una empresa con $10M en ventas anuales, con 1% eficiencia y 2% ventas adicionales)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 8: Llamada a la Acción (CTA) -->
+        <section class="section-card text-center gradient-bg">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¡Deje de Adivinar y Empiece a Saber!</h2>
+            <p class="text-xl md:text-2xl mb-8">
+                Solicite hoy mismo su <span class="font-bold">Diagnóstico GRATUITO de Madurez de Datos</span> y descubra cómo podemos convertir sus datos en su mayor ventaja competitiva en México.
+            </p>
+            <a href="#" class="btn-primary inline-block text-xl md:text-2xl hover:scale-105 transform transition-transform duration-300">
+                Agende su Diagnóstico Gratuito Ahora
+            </a>
+            <p class="text-lg mt-6">
+                <span class="font-semibold">¡Cupos Limitados!</span> Asegure su transformación analítica antes del 31 de diciembre de 2025.
+            </p>
+            <p class="text-lg mt-2">
+                Descargue un ejemplo de <a href="#" class="underline font-semibold hover:text-blue-200">"Dashboard Interactivo de Rendimiento de Ventas"</a>.
+            </p>
+        </section>
+
+        <!-- Sección 9: Conclusión -->
+        <section class="section-card text-center">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Conclusión</h2>
+            <p class="text-lg mb-4">
+                En la economía actual, la información es poder, pero solo si se organiza y se convierte en conocimiento accionable.
+            </p>
+            <p class="text-xl font-semibold text-indigo-700 mb-6">
+                Con la oferta 'Visión 360 de Datos', le entregamos la capacidad de tomar decisiones estratégicas basadas en evidencia, de forma rápida y con confianza, impulsando la rentabilidad y el crecimiento exponencial de su negocio en México.
+            </p>
+            <p class="text-2xl font-bold text-gray-900">
+                ¡Es hora de que sus datos trabajen para usted!
+            </p>
+        </section>
+
+        <footer class="text-center py-6 text-gray-500 text-sm">
+            <p>&copy; 2025 La Fábrica de Inteligencia de Datos. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
