@@ -422,15 +422,6 @@
                 header.style.backdropFilter = 'blur(10px)';
             }
         });
-
-        // Add click handlers for service buttons
-        document.querySelectorAll('.service-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const serviceName = this.parentElement.querySelector('h3').textContent;
-                alert(`¡Gracias por tu interés en ${serviceName}! Te contactaremos pronto para enviarte una propuesta personalizada.`);
-            });
-        });
     </script>
 </body>
 </html>
