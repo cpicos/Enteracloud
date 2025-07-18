@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Servicios Tecnológicos Avanzados</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.3s forwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.6s forwards;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .ai-icon { color: #ff6b6b; }
+
+        .cloud-icon { color: #45b7d1; }
+        .continuity-icon { color: #f9ca24; }
+        .bi-icon { color: #6c5ce7; }
+        .virtual-icon { color: #a29bfe; }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .service-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features li {
+            padding: 0.3rem 0;
+            color: #555;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            color: #4ecdc4;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .service-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .service-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">TechSolutions</a>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Transformamos tu Negocio con Tecnología de Vanguardia</h1>
+            <p>Soluciones integrales en IA, Cloud, Cumplimiento y más para impulsar tu empresa hacia el futuro</p>
+            <a href="#servicios" class="cta-button">Descubre Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios Especializados</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <span class="service-icon ai-icon">🤖</span>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Implementamos soluciones de IA para automatizar procesos, mejorar la toma de decisiones y crear experiencias personalizadas para tus clientes.</p>
+                    <ul class="service-features">
+                        <li>Machine Learning personalizado</li>
+                        <li>Procesamiento de lenguaje natural</li>
+                        <li>Automatización inteligente</li>
+                        <li>Análisis predictivo</li>
+                    </ul>
+                    <a href="#" class="service-button">Solicitar Propuesta</a>
+                </div>
+
+
+
+                <div class="service-card fade-in">
+                    <span class="service-icon cloud-icon">☁️</span>
+                    <h3>Cloud Computing</h3>
+                    <p>Migración y gestión de infraestructura en la nube para mejorar la escalabilidad, reducir costos y aumentar la flexibilidad operativa.</p>
+                    <ul class="service-features">
+                        <li>Migración a la nube</li>
+                        <li>Arquitecturas híbridas</li>
+                        <li>Optimización de costos</li>
+                        <li>Seguridad avanzada</li>
+                    </ul>
+                    <a href="#" class="service-button">Solicitar Propuesta</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon continuity-icon">🛡️</span>
+                    <h3>Continuidad de Negocio</h3>
+                    <p>Planes de contingencia y sistemas de backup para garantizar la operación continua de tu negocio ante cualquier eventualidad.</p>
+                    <ul class="service-features">
+                        <li>Planes de disaster recovery</li>
+                        <li>Backup automatizado</li>
+                        <li>Monitoreo 24/7</li>
+                        <li>Respuesta rápida</li>
+                    </ul>
+                    <a href="#" class="service-button">Solicitar Propuesta</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon bi-icon">📊</span>
+                    <h3>Inteligencia de Negocios (BI)</h3>
+                    <p>Transformamos tus datos en insights accionables con dashboards interactivos y análisis avanzados para la toma de decisiones estratégicas.</p>
+                    <ul class="service-features">
+                        <li>Dashboards interactivos</li>
+                        <li>Análisis de datos</li>
+                        <li>Reportes automatizados</li>
+                        <li>KPIs personalizados</li>
+                    </ul>
+                    <a href="#" class="service-button">Solicitar Propuesta</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="service-icon virtual-icon">🖥️</span>
+                    <h3>Virtualización</h3>
+                    <p>Optimizamos tu infraestructura IT con soluciones de virtualización que mejoran la eficiencia y reducen significativamente los costos operativos.</p>
+                    <ul class="service-features">
+                        <li>Virtualización de servidores</li>
+                        <li>Escritorios virtuales</li>
+                        <li>Optimización de recursos</li>
+                        <li>Gestión centralizada</li>
+                    </ul>
+                    <a href="#" class="service-button">Solicitar Propuesta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta" id="contacto">
+        <div class="container">
+            <h2>¿Listo para Transformar tu Negocio?</h2>
+            <p>Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos tecnológicos</p>
+            <a href="#" class="cta-button">Contactar Ahora</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechSolutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.1)';
+                header.style.backdropFilter = 'blur(10px)';
+            }
+        });
+
+        // Add click handlers for service buttons
+        document.querySelectorAll('.service-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const serviceName = this.parentElement.querySelector('h3').textContent;
+                alert(`¡Gracias por tu interés en ${serviceName}! Te contactaremos pronto para enviarte una propuesta personalizada.`);
+            });
+        });
+    </script>
+</body>
+</html>
